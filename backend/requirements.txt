@@ -1,0 +1,7 @@
+django
+rich
+attr
+djangorestframework_simplejwt
+djangorestframework
+markdown
+django-filter
