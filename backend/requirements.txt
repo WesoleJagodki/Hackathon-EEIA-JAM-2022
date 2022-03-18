@@ -1,6 +1,6 @@
 django
 rich
-attr
+attrs
 djangorestframework_simplejwt
 djangorestframework
 markdown
