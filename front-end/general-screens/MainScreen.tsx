@@ -1,8 +1,7 @@
-import React, {StyleSheet, Text} from "react-native";
-import {styles} from "./GeneralStyle";
+import React, { Text } from "react-native";
 
 export const MainScreen = function(): JSX.Element {
     return(
-            <Text style={styles.text}>Hello world</Text>
+            <Text/>
         )
 }
