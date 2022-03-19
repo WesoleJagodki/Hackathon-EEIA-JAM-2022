@@ -21,6 +21,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="PreferencesScreen" component={PreferencesScreen} options={{ title: 'Preferences' }} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
             <Stack.Screen name="SecurityScreen" component={SecurityScreen} options={{ title: 'Security' }} />
+            <Stack.Screen name="HelpScreen" component={HelpScreen} options={{ title: 'Help' }} />
         </Stack.Navigator>
     );
 }

@@ -5,7 +5,7 @@ import {NativeBaseProvider, VStack, HStack, Center, Button} from "native-base";
 import {LinearGradient} from 'expo-linear-gradient';
 import {g_styles, security_screen} from "./GeneralStyle";
 import {settings_styles} from './GeneralStyle';
-import {ImageButton} from "../components/ImageButton";
+import {DoubleImageButton} from "../components/DoubleImageButton";
 
 export const SecurityScreen = function ({navigation}): JSX.Element {
     return (
@@ -14,13 +14,15 @@ export const SecurityScreen = function ({navigation}): JSX.Element {
                 <LinearGradient
                     colors={['rgba(22,6,81,100)', 'transparent']}
                 >
+                <Center>
                     <Text style={Security_style.mainText}>Password & Security</Text>
                     <VStack space={3} style={settings_styles.settings_list}>
-                        <HStack position={'relative'} left={-5} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.key} source={require("../image/key.png")}/><ImageButton text="Change password"/></HStack>
-                        <HStack position={'relative'} left={-7} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.shield} source={require("../image/shield.png")}/><ImageButton text="Two-factor authentication"/></HStack>
-                        <HStack position={'relative'} left={-8} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.questionmark} source={require("../image/help-circle.png")}/><ImageButton text="Learn more about security"/></HStack>
+                        <HStack position={'relative'} left={-5} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.key} source={require("../image/key.png")}/><DoubleImageButton text="Change password"/></HStack>
+                        <HStack position={'relative'} left={-7} onTouchStart={() => {navigation.navigate('MainScreen')}}><Image style={security_screen.shield} source={require("../image/shield.png")}/><DoubleImageButton text="Two-factor authentication"/></HStack>
+                        <HStack position={'relative'} left={-8} onTouchStart={() => {navigation.navigate('PreferencesScreen')}}><Image style={security_screen.questionmark} source={require("../image/help-circle.png")}/><DoubleImageButton text="Learn more about security"/></HStack>
                     </VStack>
-                    <Center><Button style={security_screen.menuButton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}>Back to settings</Button></Center>
+                    <Button style={security_screen.menuButton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}>Back to settings</Button>
+                </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>

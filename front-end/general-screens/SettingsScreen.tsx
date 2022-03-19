@@ -1,5 +1,5 @@
 import React, { View } from "react-native";
-import { Text, NativeBaseProvider, VStack } from "native-base";
+import { Text, NativeBaseProvider, VStack, Center } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles, settings_styles } from "./GeneralStyle";
@@ -13,14 +13,16 @@ export const SettingsScreen = function (): JSX.Element {
                 <LinearGradient
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}>
-                    <Text style={settings_styles.heading}> Settings </Text>
-                    <VStack space={5} style={settings_styles.settings_list}>
-                        <ImageButton text="Account" />
-                        <ImageButton text="Preferences" />
-                        <ImageButton text="Password & Security" />
-                        <ImageButton text="Help & FAQ" />
-                        <ImageButton text="Info" />
-                    </VStack>
+                    <Center>
+                        <Text style={settings_styles.heading}> Settings </Text>
+                        <VStack space={5} style={settings_styles.settings_list}>
+                            <ImageButton text="Account" />
+                            <ImageButton text="Preferences" />
+                            <ImageButton text="Password & Security" />
+                            <ImageButton text="Help & FAQ" />
+                            <ImageButton text="Info" />
+                        </VStack>
+                    </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>

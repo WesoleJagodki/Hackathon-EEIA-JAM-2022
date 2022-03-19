@@ -9,7 +9,7 @@ interface ImageButtonProps {
     onClick?: any;
 }
 
-export const ImageButton = function ({ text, img, onClick }: ImageButtonProps): JSX.Element {
+export const DoubleImageButton = function ({ text, img, onClick }: ImageButtonProps): JSX.Element {
     return (
         <View onStartShouldSetResponder={onClick}>
             <HStack style={button_style.background}>
@@ -18,6 +18,7 @@ export const ImageButton = function ({ text, img, onClick }: ImageButtonProps): 
                 <Image
                     style={button_style.image}
                     source={require("../image/Stroke-1.png")}
+                    alt={text}
                 />
             </HStack>
         </View>
