@@ -10,3 +10,6 @@ djangorestframework_simplejwt
 djangorestframework
 markdown
 django-filter
+marshmallow
+django-rest-marshmallow
+requests
