@@ -12,11 +12,11 @@ export const LoadingScreen = function({navigation}): JSX.Element {
                 style={g_styles.background}>
                 <View onStartShouldSetResponder={() => navigation.navigate('LoginScreen')}>
                     <Image
-                        style={login_screen.logo1}
+                        style={loading_screen.logo1}
                         source={require('../image/city.png')}
                     />
                     <Image
-                        style={login_screen.logo2}
+                        style={loading_screen.logo2}
                         source={require('../image/FANCITY.png')}
                     />
                     <Text style={loading_screen.h2}>closed, luxurious city in your pocket</Text>
