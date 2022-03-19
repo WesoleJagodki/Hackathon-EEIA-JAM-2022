@@ -20,18 +20,48 @@ export const g_styles = StyleSheet.create({
 
 export const loading_screen = StyleSheet.create({
     logo1: {
-        marginLeft: 45,
-        marginTop: 150,
-        height: 300,
-        width: 300,
+        marginLeft: 22,
+        marginTop: 81,
+        height: 350,
+        width: 350,
     },
     logo2: {
-        marginTop: 20,
-        marginLeft: 100,
+        marginTop: 55,
+        marginLeft: 93,
+        height: 36,
+        width: 204,
     },
     h2: {
         color: "#F9A88F",
-        marginLeft: 85,
-        marginTop: 20,
+        marginLeft: 39,
+        marginTop: 27,
+        fontSize: 20,
+    },
+});
+
+export const login_screen = StyleSheet.create({
+    logo1: {
+        marginLeft: 22,
+        marginTop: 81,
+        height: 350,
+        width: 350,
+    },
+    logo2: {
+        marginTop: 55,
+        marginLeft: 93,
+        height: 36,
+        width: 204,
+    },
+    h2: {
+        color: "#F9A88F",
+        marginLeft: 39,
+        marginTop: 27,
+        fontSize: 20,
+    },
+    buttons:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginLeft: 39,
+        marginRight: 39,
     },
 });
