@@ -84,27 +84,18 @@ export const preferences_screen = StyleSheet.create({
     title: {
         textAlign: 'center',
         marginTop: 72,
+        marginBottom: 20,
         fontSize: 36,
         color: 'white',
     },
-    text1: {
-        fontSize: 20,
-        marginTop: 48,
-        marginLeft: 52,
+    preference_label: {
+        fontSize: 22,
         color: 'white',
+        marginLeft: 20,
     },
-    text2: {
-        fontSize: 20,
-        marginLeft: 52,
-        color: 'white',
-    },
-    horizontal: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-    },
-    button1: {
-        height: 40,
-        marginTop: 40,
+    gender_selection: {
+        fontSize: 22,
         backgroundColor: 'transparent',
     },
+
 });
