@@ -62,15 +62,9 @@ export const login_screen = StyleSheet.create({
         height: 40,
         marginRight: 20,
     },
-    button2: {
-        width: 140,
-        height: 40,
-        marginLeft: 20,
-    },
     text: {
         fontSize: 18,
         color: 'white',
-        fontWeight: "bold"
     },
 });
 
@@ -168,4 +162,50 @@ export const security_screen = StyleSheet.create({
         marginTop: 200,
         width: 200,
     }
+});
+
+export const registration_screen = StyleSheet.create({
+    title: {
+        color: 'white',
+        fontSize: 34,
+        paddingTop: 90,
+    },
+    mtop: {
+        marginTop: 20,
+    },
+    bmtop: {
+        marginTop: 40,
+    },
+    h1: {
+        color: "white",
+        fontSize: 20,
+        textAlign: "center",
+    },
+    input: {
+        backgroundColor: "#F6F6F6",
+        marginTop: 20,
+        padding: 10,
+        borderRadius: 10,
+        width: 310,
+    },
+    policy: {
+        marginTop: 27,
+        color: 'white',
+        fontSize: 13,
+
+    },
+    checkbox: {
+        marginTop: 27,
+        marginRight: 5,
+    },
+    button: {
+        width: 140,
+        height: 40,
+        marginTop: 39,
+    },
+    login: {
+        marginLeft: 5,
+        color: '#FFA68B',
+        fontWeight: "bold",
+    },
 });

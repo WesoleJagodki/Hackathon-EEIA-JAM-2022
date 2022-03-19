@@ -8,8 +8,8 @@ import { RegistrationScreen } from '../general-screens/RegistrationScreen';
 import { HelpScreen } from "../general-screens/HelpScreen";
 import { SettingsScreen } from "../general-screens/SettingsScreen";
 import { SecurityScreen } from "../general-screens/SecurityScreen";
-import {MainScreen} from "../general-screens/MainScreen";
-import {PreferencesScreen} from "../general-screens/PreferencesScreen";
+import { MainScreen } from "../general-screens/MainScreen";
+import { PreferencesScreen } from "../general-screens/PreferencesScreen";
 
 const Stack = createNativeStackNavigator();
 
