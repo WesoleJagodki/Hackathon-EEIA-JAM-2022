@@ -58,7 +58,7 @@ export const login_screen = StyleSheet.create({
         marginTop: 27,
         fontSize: 20,
     },
-    buttons:{
+    horizontal:{
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginLeft: 39,
@@ -119,5 +119,23 @@ export const settings_styles = StyleSheet.create({
         fontSize: 48,
         alignSelf: 'center',
         paddingTop: 90,
-    }
+    },
+
+    title: {
+        textAlign: 'center',
+        marginTop: 72,
+        marginBottom: 20,
+        fontSize: 36,
+        color: 'white',
+    },
+    preference_label: {
+        fontSize: 22,
+        color: 'white',
+        marginLeft: 20,
+    },
+    gender_selection: {
+        fontSize: 22,
+        backgroundColor: 'transparent',
+    },
+
 });
