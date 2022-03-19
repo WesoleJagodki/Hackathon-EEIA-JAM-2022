@@ -16,11 +16,6 @@ export const g_styles = StyleSheet.create({
         top: 0,
         height: '100%',
     },
-    text: {
-        color: 'blue',
-        marginLeft: 160,
-        marginTop: 50,
-    },
 });
 
 export const loading_screen = StyleSheet.create({
@@ -73,10 +68,16 @@ export const login_screen = StyleSheet.create({
     button1: {
         width: 140,
         height: 40,
+        fontSize: 20,
     },
     button2: {
         width: 140,
         height: 40,
+    },
+    text: {
+        fontSize: 18,
+        color: 'white',
+        fontWeight: "bold"
     },
 });
 
@@ -101,6 +102,7 @@ export const Help_FAQ = StyleSheet.create({
     },
     header: {
         fontSize: 20,
+        fontWeight: "bold",
     }
 });
 

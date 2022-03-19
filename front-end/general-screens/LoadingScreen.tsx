@@ -3,7 +3,7 @@ import { loading_screen,g_styles } from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const LoadingScreen = function ({ navigation }): JSX.Element {
+export const LoadingScreen = function ({navigation}): JSX.Element {
     return (
         <View style={g_styles.container_app}>
             <LinearGradient

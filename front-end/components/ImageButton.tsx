@@ -19,6 +19,7 @@ export const ImageButton = function ({ text, img, onClick }: ImageButtonProps): 
                 <Image
                     style={button_style.image}
                     source={require("../image/Stroke-1.png")}
+                    alt={text}
                 />
             </HStack>
         </View>
