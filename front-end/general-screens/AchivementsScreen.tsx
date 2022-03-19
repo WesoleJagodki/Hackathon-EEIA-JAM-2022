@@ -1,9 +1,9 @@
 import React, { View } from "react-native";
-import { Text, NativeBaseProvider, Image, VStack, HStack, Modal, Button } from "native-base";
+import { useState } from "react";
+import { Text, NativeBaseProvider, Image, VStack, HStack, Modal, Button, Center } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import { g_styles, settings_styles, achivements_styles } from "./GeneralStyle";
-import { useState } from "react";
+import {g_styles, settings_styles, achivements_styles, preferences_screen, login_screen} from "./GeneralStyle";
 
 const ALPACAS = [
     {
@@ -21,7 +21,7 @@ const ALPACAS = [
     { img: require("../image/a5.png") }
 ];
 
-export const AchivementsScreen = function (): JSX.Element {
+export const AchivementsScreen = function ({navigation} : any): JSX.Element {
     const [showModal, setShowModal] = useState(false);
     const [popupData, setPopupData] = useState({ title: null, description: null});
 
@@ -54,39 +54,41 @@ export const AchivementsScreen = function (): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}
                 >
-                    <Text style={settings_styles.heading}>Achievements</Text>
-                    <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt="Alpaca"></Image>
-                    <Text style={achivements_styles.centred_text}>Fulfilled alpaca dreams</Text>
+                    <Center>
+                        <Text style={settings_styles.heading}>Achievements</Text>
+                        <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt="Alpaca"></Image>
+                        <Text style={achivements_styles.centred_text}>Fulfilled alpaca dreams</Text>
 
-                    <VStack style={achivements_styles.mini_alpacas} space={5}>
-                        <HStack space={3}>
-                            {
-                                ALPACAS.slice(0, 3).map(MiniAlpaca)
-                            }
-                        </HStack>
-                        <HStack space={3}>
-                            {
-                                ALPACAS.slice(3).map(MiniAlpaca)
-                            }
-                        </HStack>
-                        <Text style={achivements_styles.footer}> Congratulations! </Text>
-                    </VStack>
-                    <Modal isOpen={showModal}>
-                        <Modal.Content maxWidth="400px">
-                            <Modal.CloseButton />
-                            <Modal.Header>{popupData.title}</Modal.Header>
-                            <Modal.Body>
-                                {popupData.description}
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Button.Group space={2}>
-                                    <Button onPress={() => { setShowModal(false); }}>
-                                        Complited
-                                    </Button>
-                                </Button.Group>
-                            </Modal.Footer>
-                        </Modal.Content>
-                    </Modal>
+                        <VStack style={achivements_styles.mini_alpacas} space={5}>
+                            <HStack space={3}>
+                                {
+                                    ALPACAS.slice(0, 3).map(MiniAlpaca)
+                                }
+                            </HStack>
+                            <HStack space={3}>
+                                {
+                                    ALPACAS.slice(3).map(MiniAlpaca)
+                                }
+                            </HStack>
+                        </VStack>
+                        <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Congratulations!</Text></Button>
+                        <Modal isOpen={showModal}>
+                            <Modal.Content maxWidth="400px">
+                                <Modal.CloseButton />
+                                <Modal.Header>{popupData.title}</Modal.Header>
+                                <Modal.Body>
+                                    {popupData.description}
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button.Group space={2}>
+                                        <Button onPress={() => { setShowModal(false); }}>
+                                            Complited
+                                        </Button>
+                                    </Button.Group>
+                                </Modal.Footer>
+                            </Modal.Content>
+                        </Modal>
+                    </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>
