@@ -1,8 +1,9 @@
 import React from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./front-end/general-screens/GeneralStyle";
-import {LoginScreen} from "./front-end/general-screens/LoginScreen";
+import {RootNavigator} from "./front-end/navigation/RootNavigator";
 
 export default function App() : JSX.Element {
     return (
@@ -11,7 +12,9 @@ export default function App() : JSX.Element {
               colors={['rgba(22,6,81,100)', 'transparent']}
               style={g_styles.background}
           />
-        <LoginScreen/>
+          <NavigationContainer>
+            <RootNavigator/>
+          </NavigationContainer>
       </SafeAreaProvider>
     );
 }
