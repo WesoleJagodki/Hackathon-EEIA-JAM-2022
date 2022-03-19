@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { LoadingScreen } from '../general-screens/LoadingScreen';
 import { LoginScreen } from '../general-screens/LoginScreen';
+import { LoginLoginScreen } from '../general-screens/LoginLoginScreen';
 import { RegistrationScreen } from '../general-screens/RegistrationScreen';
 
 import { HelpScreen } from "../general-screens/HelpScreen";
@@ -18,6 +19,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
     return (
         <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Root" component={LoadingScreen} options={{ title: 'Welcome' }}/>
+            <Stack.Screen name="LoginLoginScreen" component={LoginLoginScreen} options={{ title: 'LoginLogin' }} />
             <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ title: 'Login' }} />
             <Stack.Screen name="RegistrationScreen" component={RegistrationScreen} options={{ title: 'Register' }} />
             <Stack.Screen name="MainScreen" component={MainScreen} options={{ title: 'Main' }} />

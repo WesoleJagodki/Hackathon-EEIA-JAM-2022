@@ -23,6 +23,9 @@ export const AchivementsScreen = function (): JSX.Element {
             <View key={alpaca.img} onTouchEnd={onAlpacaClick}>
                 <Image
                     style={achivements_styles.alpaca_mini}
+                    source={require(`../image/a4.png`)}
+                    alt={alpaca.name}
+                    key={alpaca.name}
                     source={alpaca.img}
                     alt={alpaca.img}
                     key={alpaca.img}

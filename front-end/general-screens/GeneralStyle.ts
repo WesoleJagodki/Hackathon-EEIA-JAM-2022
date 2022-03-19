@@ -257,3 +257,19 @@ export const achivements_styles = StyleSheet.create({
         borderColor: '#9A16A3',
     },
 });
+
+
+export const login_login_screen = StyleSheet.create({
+    image: {
+        height: 300,
+        width: 300,
+    },
+    recovery : {
+        alignSelf: 'flex-end',
+        marginTop: 20,
+    },
+    login: {
+        color: 'lightgray',
+        fontWeight: "bold",
+    },
+})
