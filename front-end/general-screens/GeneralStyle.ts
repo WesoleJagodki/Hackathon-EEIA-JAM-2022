@@ -26,7 +26,7 @@ export const g_styles = StyleSheet.create({
 export const loading_screen = StyleSheet.create({
     logo1: {
         marginLeft: 22,
-        marginTop: 81,
+        marginTop: 131,
         height: 350,
         width: 350,
     },
@@ -47,7 +47,7 @@ export const loading_screen = StyleSheet.create({
 export const login_screen = StyleSheet.create({
     logo1: {
         marginLeft: 22,
-        marginTop: 20,
+        marginTop: 81,
         height: 350,
         width: 350,
     },

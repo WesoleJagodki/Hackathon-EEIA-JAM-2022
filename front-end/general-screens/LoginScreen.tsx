@@ -1,4 +1,4 @@
-import React, { Image, Text, View, Alert } from "react-native";
+import React, { Image, Text, View} from "react-native";
 import { login_screen } from "./GeneralStyle";
 
 import city from "../image/city.png";
