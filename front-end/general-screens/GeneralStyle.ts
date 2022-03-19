@@ -3,13 +3,18 @@ import {StyleSheet} from "react-native";
 export const g_styles = StyleSheet.create({
     container_app: {
         backgroundColor: 'rgba(71, 15, 138, 100)',
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        height: '100%'
     },
     background: {
         position: 'absolute',
         left: 0,
         right: 0,
         top: 0,
-        height: 800,
+        height: '100%',
     },
     text: {
         color: 'blue',

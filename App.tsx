@@ -8,10 +8,6 @@ import {RootNavigator} from "./front-end/navigation/RootNavigator";
 export default function App() : JSX.Element {
     return (
       <SafeAreaProvider style={g_styles.container_app}>
-          <LinearGradient
-              colors={['rgba(22,6,81,100)', 'transparent']}
-              style={g_styles.background}
-          />
           <NavigationContainer>
             <RootNavigator/>
           </NavigationContainer>

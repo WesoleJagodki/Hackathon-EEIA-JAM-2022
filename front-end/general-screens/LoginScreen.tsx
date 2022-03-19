@@ -4,9 +4,16 @@ import {login_screen} from "./GeneralStyle";
 import city from "../image/city.png";
 import sub from "../image/FANCITY.png";
 
+import { LinearGradient } from 'expo-linear-gradient';
+import { g_styles } from "./GeneralStyle";
+
 export const LoginScreen = function(): JSX.Element {
     return(
-        <View>
+        <View style={g_styles.container_app}>
+            <LinearGradient
+                colors={['rgba(22,6,81,100)', 'transparent']}
+                style={g_styles.background}
+            />
             <Image
                 style={login_screen.logo1}
                 source={city}
