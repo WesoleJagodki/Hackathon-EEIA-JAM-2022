@@ -25,8 +25,8 @@ export const LoginScreen = function ({navigation}): JSX.Element {
                     <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
 
                     <View style={login_screen.buttons}>
-                        <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}>Sign in</Button>
-                        <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => navigation.navigate('HelpScreen')}>Log in</Button>
+                        <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Sign in</Text></Button>
+                        <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => navigation.navigate('HelpScreen')}><Text style={login_screen.text}>Log in</Text></Button>
                     </View>
                 </LinearGradient>
             </View>
