@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 export const g_styles = StyleSheet.create({
     container_app: {
@@ -15,11 +15,6 @@ export const g_styles = StyleSheet.create({
         right: 0,
         top: 0,
         height: '100%',
-    },
-    text: {
-        color: 'blue',
-        marginLeft: 160,
-        marginTop: 50,
     },
 });
 
@@ -63,7 +58,7 @@ export const login_screen = StyleSheet.create({
         marginTop: 27,
         fontSize: 20,
     },
-    buttons:{
+    horizontal: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginLeft: 39,
@@ -73,10 +68,16 @@ export const login_screen = StyleSheet.create({
     button1: {
         width: 140,
         height: 40,
+        fontSize: 20,
     },
     button2: {
         width: 140,
         height: 40,
+    },
+    text: {
+        fontSize: 18,
+        color: 'white',
+        fontWeight: "bold"
     },
 });
 
@@ -101,6 +102,7 @@ export const Help_FAQ = StyleSheet.create({
     },
     header: {
         fontSize: 20,
+        fontWeight: "bold",
     }
 });
 
@@ -127,6 +129,30 @@ export const settings_styles = StyleSheet.create({
         fontSize: 48,
         alignSelf: 'center',
         paddingTop: 90,
+    },
+
+    title: {
+        textAlign: 'center',
+        paddingTop: 90,
+        marginBottom: 20,
+        fontSize: 36,
+        color: 'white',
+    },
+});
+
+export const preferences_screen = StyleSheet.create({
+   label: {
+        fontSize: 22,
+        color: 'white',
+    },
+    selection: {
+        fontSize: 22,
+        color: 'white',
+    },
+    option: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: 300,
     }
 });
 
