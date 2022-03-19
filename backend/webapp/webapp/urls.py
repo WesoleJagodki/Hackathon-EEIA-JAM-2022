@@ -28,7 +28,3 @@ urlpatterns = [
     ),
     path("api/", include("fancycity.urls"), name="fancyffff"),
 ]
-
-
-# https://app.getpostman.com/join-team?invite_code=9fd2f6af0e490cb0198bdc9a4e4471f1
-https://app.getpostman.com/join-team?invite_code=9fd2f6af0e490cb0198bdc9a4e4471f1&target_code=177dea596cee31f7ec2acfc5ff2afb7e

@@ -15,3 +15,10 @@ class UserRegisterSerializer(Schema):
     @post_load
     def create_entity(self, data, **kwargs):
         return User(id=uuid4(), **data)
+
+
+class UserSerializer(Schema):
+    email = fields.Str()
+    firstname = fields.Str()
+    lastname = fields.Str()
+    birthdate = fields.Date()
