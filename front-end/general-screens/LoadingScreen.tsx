@@ -14,7 +14,7 @@ export const LoadingScreen = function({navigation}): JSX.Element {
                 colors={['rgba(22,6,81,100)', 'transparent']}
                 style={g_styles.background}
             />
-            <View onStartShouldSetResponder={() => navigation.navigate('LoginScreen')}>
+            <View onStartShouldSetResponder={() => navigation.navigate('HelpFAQ')}>
                 <Image
                     style={loading_screen.logo1}
                     source={city}
