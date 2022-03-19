@@ -204,3 +204,38 @@ export const registration_screen = StyleSheet.create({
         fontWeight: "bold",
     },
 });
+
+export const achivements_styles = StyleSheet.create({
+    alpaca_img: {
+        height: 250,
+        width: 250,
+        alignSelf: 'center'
+    },
+
+    centred_text: {
+        alignSelf: 'center',
+        fontSize: 34,
+        color: 'white'
+    },
+
+    mini_alpacas: {
+        alignSelf: 'center',
+        marginTop: 15
+    },
+
+    alpaca_mini: {
+        height: 100,
+        width: 100
+    },
+
+    footer: {
+        marginTop: 25,
+        color: 'white',
+        fontSize: 24,
+        alignSelf: 'center',
+        borderWidth: 4,
+        borderRadius: 12,
+        backgroundColor: '#9A16A3',
+        borderColor: '#9A16A3'
+    }
+});
