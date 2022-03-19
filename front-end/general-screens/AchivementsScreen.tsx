@@ -4,6 +4,7 @@ import { Text, NativeBaseProvider, Image, VStack, HStack, Modal, Button, Center 
 
 import { LinearGradient } from 'expo-linear-gradient';
 import {g_styles, settings_styles, achivements_styles, preferences_screen, login_screen} from "./GeneralStyle";
+import {AlpakaModal} from "../modal/AlpakaModal";
 
 const ALPACAS = [
     {
@@ -23,10 +24,10 @@ const ALPACAS = [
 
 export const AchivementsScreen = function ({navigation} : any): JSX.Element {
     const [showModal, setShowModal] = useState(false);
-    const [popupData, setPopupData] = useState({ title: null, description: null});
+    const [popupData, setPopupData] = useState({ title: null, description: null, img: null});
 
     function MiniAlpaca(alpaca: any): JSX.Element {
-        const data = { title: alpaca.title, description: alpaca.description};
+        const data = { title: alpaca.title, description: alpaca.description, img: alpaca.img};
 
         function onAlpacaClick() {
             if(data.title && data.description) {
@@ -75,22 +76,7 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                             </HStack>
                         </VStack>
                         <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Congratulations!</Text></Button>
-                        <Modal isOpen={showModal}>
-                            <Modal.Content maxWidth="400px">
-                                <Modal.CloseButton />
-                                <Modal.Header>{popupData.title}</Modal.Header>
-                                <Modal.Body>
-                                    {popupData.description}
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <Button.Group space={2}>
-                                        <Button onPress={() => { setShowModal(false); }}>
-                                            Complited
-                                        </Button>
-                                    </Button.Group>
-                                </Modal.Footer>
-                            </Modal.Content>
-                        </Modal>
+                        <AlpakaModal popupData={popupData} setShowModal={setShowModal} showModal={showModal}/>
                     </Center>
                 </LinearGradient>
             </View>

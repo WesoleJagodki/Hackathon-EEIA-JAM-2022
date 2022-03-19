@@ -10,7 +10,7 @@ import {
 
 import { LinearGradient } from "expo-linear-gradient";
 
-export const LoginLoginScreen = function ({ navigation }) {
+export const LoginLoginScreen = function ({ navigation } : any) {
   const [formData, setData] = useState({});
   const [errors, setErrors] = useState({});
 
