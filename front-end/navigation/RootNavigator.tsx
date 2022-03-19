@@ -9,8 +9,8 @@ const Stack = createNativeStackNavigator();
 export const RootNavigator = function RootNavigator() : JSX.Element {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Root" component={LoadingScreen} />
-            <Stack.Screen name="LoginScreen" component={LoginScreen} />
+            <Stack.Screen name="Root" component={LoadingScreen} options={{ title: 'Welcome' }}/>
+            <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ title: 'Login' }} />
         </Stack.Navigator>
     );
 }
