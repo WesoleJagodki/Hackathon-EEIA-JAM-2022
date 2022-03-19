@@ -24,7 +24,6 @@ const ALPACAS = [
 export const AchivementsScreen = function (): JSX.Element {
     const [showModal, setShowModal] = useState(false);
     const [popupData, setPopupData] = useState({ title: null, description: null});
-    const [index, setIndex] = useState(0);
 
     function MiniAlpaca(alpaca: any): JSX.Element {
         const data = { title: alpaca.title, description: alpaca.description};
@@ -36,15 +35,13 @@ export const AchivementsScreen = function (): JSX.Element {
             }
         }
 
-        setIndex(index + 1);
-
         return (
-            <View key={index} onTouchEnd={onAlpacaClick}>
+            <View key={Math.random()} onTouchEnd={onAlpacaClick}>
                 <Image
                     style={achivements_styles.alpaca_mini}
                     source={alpaca.img}
-                    alt={"Alpaca" + index.toString()}
-                    key={index}
+                    alt="Alpaca"
+                    key={Math.random()}
                 />
             </View>
         )
