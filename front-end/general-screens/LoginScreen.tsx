@@ -34,7 +34,6 @@ export const LoginScreen = function (): JSX.Element {
                         >
                             Right button
                         </Button>
-                    </View>
                 </LinearGradient>
             </View>
 

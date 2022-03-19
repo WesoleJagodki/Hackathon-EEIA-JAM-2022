@@ -79,19 +79,3 @@ export const login_screen = StyleSheet.create({
         height: 40,
     },
 });
-
-export const settings_styles = StyleSheet.create({
-    settings_list: {
-        width: 300,
-        alignSelf: 'center',
-        marginTop: 50,
-        marginRight: 10,
-    },
-
-    heading: {
-        color: 'white',
-        fontSize: 48,
-        alignSelf: 'center',
-        paddingTop: 90,
-    }
-});
