@@ -1,4 +1,4 @@
-import React, { Image, Text, View} from "react-native";
+import React, { Image, Text, View, Alert} from "react-native";
 import { login_screen } from "./GeneralStyle";
 
 import { NativeBaseProvider, Button } from "native-base";
@@ -23,18 +23,19 @@ export const LoginScreen = function (): JSX.Element {
                     />
                     <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
 
-                <View style={login_screen.buttons}>
-                    <Button
-                        onPress={() => Alert.alert('Left button pressed')}
-                    >
-                        Left button
+                    <View style={login_screen.buttons}>
+                        <Button
+                            onPress={() => Alert.alert('Left button pressed')}
+                        >
+                            Left button
+                            </Button>
+                        <Button
+                            onPress={() => Alert.alert('Right button pressed')}
+                        >
+                            Right button
                         </Button>
-                    <Button
-                        onPress={() => Alert.alert('Right button pressed')}
-                    >
-                        Right button
-                    </Button>
-                </View>
+                    </View>
+                </LinearGradient>
             </View>
 
         </NativeBaseProvider>

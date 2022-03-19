@@ -1,19 +1,18 @@
 import { StyleSheet } from "react-native";
 
 export const button_style = StyleSheet.create({
-    image: {
-        width: '20px',
-        height: '100%'
-    },
-
     background: {
         backgroundColor: 'transparent',
     },
-
+    image: {
+        width: 12,
+        height: 22,
+    },
     button_text: {
-        fontSize: 24,
+        fontSize: 21,
         color: 'white',
         textAlign: 'left',
-        width: '100%',
+        width: 300,
+        height: 30,
     }
 });
