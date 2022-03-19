@@ -5,7 +5,7 @@ import {g_styles, registration_screen, login_screen} from "./GeneralStyle";
 
 import { LinearGradient } from "expo-linear-gradient";
 
-export const RegistrationScreen = function ({navigation}) {
+export const RegistrationScreen = function ({navigation} : any) {
   const [formData, setData] = useState({});
   const [errors, setErrors] = useState({});
 

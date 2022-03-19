@@ -6,7 +6,7 @@ import { NativeBaseProvider, Button, Center } from "native-base";
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
 
-export const LoginScreen = function ({navigation}): JSX.Element {
+export const LoginScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>

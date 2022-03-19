@@ -7,7 +7,7 @@ import {g_styles, security_screen} from "./GeneralStyle";
 import {settings_styles} from './GeneralStyle';
 import {DoubleImageButton} from "../components/DoubleImageButton";
 
-export const SecurityScreen = function ({navigation}): JSX.Element {
+export const SecurityScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>

@@ -6,7 +6,7 @@ import { g_styles, settings_styles } from "./GeneralStyle";
 
 import { ImageButton } from "../components/ImageButton";
 
-export const SettingsScreen = function ({navigation}): JSX.Element {
+export const SettingsScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
@@ -16,7 +16,7 @@ export const SettingsScreen = function ({navigation}): JSX.Element {
                     <Center>
                         <Text style={settings_styles.heading}> Settings </Text>
                         <VStack space={5} style={settings_styles.settings_list}>
-                            <ImageButton text="Account" onClick={() => {navigation.navigate('HelpScreen')}}/>
+                            <ImageButton text="Account" onClick={() => {navigation.navigate('AchivementsScreen')}}/>
                             <ImageButton text="Preferences" onClick={() => {navigation.navigate('PreferencesScreen')}}/>
                             <ImageButton text="Password & Security" onClick={() => {navigation.navigate('SecurityScreen')}}/>
                             <ImageButton text="Help & FAQ" onClick={() => {navigation.navigate('HelpScreen')}}/>

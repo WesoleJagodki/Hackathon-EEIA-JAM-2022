@@ -5,7 +5,7 @@ import {NativeBaseProvider, Box, Center, Button} from "native-base";
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
 
-export const HelpScreen = function ({navigation}): JSX.Element {
+export const HelpScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
