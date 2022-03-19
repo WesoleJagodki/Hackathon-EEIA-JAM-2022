@@ -5,9 +5,26 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles, settings_styles, achivements_styles } from "./GeneralStyle";
 import { useState } from "react";
 
+const ALPACAS = [
+    {
+        img: require("../image/calm_alpaca.png"),
+        title: "Calm alpaca",
+        description: "Schedule a yoga class 3 times"
+    },
+    {
+        img: require("../image/suprised_alpaca.png"),
+        title: "Suprise alpaca",
+        description: "Log in 365 days in a row"
+    },
+    { img: require("../image/a3.png") },
+    { img: require("../image/a4.png") },
+    { img: require("../image/a5.png") }
+];
+
 export const AchivementsScreen = function (): JSX.Element {
     const [showModal, setShowModal] = useState(false);
     const [popupData, setPopupData] = useState({ title: null, description: null});
+    const [index, setIndex] = useState(0);
 
     function MiniAlpaca(alpaca: any): JSX.Element {
         const data = { title: alpaca.title, description: alpaca.description};
@@ -19,33 +36,19 @@ export const AchivementsScreen = function (): JSX.Element {
             }
         }
 
+        setIndex(index + 1);
+
         return (
-            <View key={alpaca.img} onTouchEnd={onAlpacaClick}>
+            <View key={index} onTouchEnd={onAlpacaClick}>
                 <Image
                     style={achivements_styles.alpaca_mini}
                     source={alpaca.img}
-                    alt={alpaca.img}
-                    key={alpaca.img}
+                    alt={"Alpaca" + index.toString()}
+                    key={index}
                 />
             </View>
         )
     }
-
-    const alpacas = [
-        {
-            img: require("../image/calm_alpaca.png"),
-            title: "Calm alpaca",
-            description: "Schedule a yoga class 3 times"
-        },
-        {
-            img: require("../image/suprised_alpaca.png"),
-            title: "Suprise alpaca",
-            description: "Log in 365 days in a row"
-        },
-        { img: require("../image/a3.png") },
-        { img: require("../image/a4.png") },
-        { img: require("../image/a5.png") }
-    ];
 
     return (
         <NativeBaseProvider>
@@ -61,12 +64,12 @@ export const AchivementsScreen = function (): JSX.Element {
                     <VStack style={achivements_styles.mini_alpacas} space={5}>
                         <HStack space={3}>
                             {
-                                // alpacas.slice(0, 3).map(MiniAlpaca)
+                                ALPACAS.slice(0, 3).map(MiniAlpaca)
                             }
                         </HStack>
                         <HStack space={3}>
                             {
-                                // alpacas.slice(3).map(MiniAlpaca)
+                                ALPACAS.slice(3).map(MiniAlpaca)
                             }
                         </HStack>
                         <Text style={achivements_styles.footer}> Congratulations! </Text>
