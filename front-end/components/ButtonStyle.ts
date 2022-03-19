@@ -12,7 +12,7 @@ export const button_style = StyleSheet.create({
         fontSize: 21,
         color: 'white',
         textAlign: 'left',
-        width: 300,
+        width: 270,
         height: 30,
     }
 });

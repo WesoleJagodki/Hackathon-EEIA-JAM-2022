@@ -104,6 +104,16 @@ export const Help_FAQ = StyleSheet.create({
     }
 });
 
+export const Security_style = StyleSheet.create({
+    mainText: {
+        color: 'white',
+        fontSize: 36,
+        textAlign: "center",
+        marginTop: 70,
+        marginBottom: 20,
+    },
+})
+
 export const settings_styles = StyleSheet.create({
     settings_list: {
         width: 300,
@@ -117,5 +127,26 @@ export const settings_styles = StyleSheet.create({
         fontSize: 48,
         alignSelf: 'center',
         paddingTop: 90,
+    }
+});
+
+export const security_screen = StyleSheet.create({
+    key: {
+        height: 19,
+        width: 20,
+    },
+    shield: {
+        marginLeft: 3,
+        marginRight: 3,
+        height: 20,
+        width: 16,
+    },
+    questionmark: {
+        height: 24,
+        width: 24,
+    },
+    menuButton: {
+        marginTop: 200,
+        width: 200,
     }
 });
