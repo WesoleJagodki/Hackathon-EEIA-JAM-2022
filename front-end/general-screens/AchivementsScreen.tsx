@@ -20,12 +20,15 @@ export const AchivementsScreen = function (): JSX.Element {
         }
 
         return (
-            <View key={alpaca.name} onTouchEnd={onAlpacaClick}>
+            <View key={alpaca.img} onTouchEnd={onAlpacaClick}>
                 <Image
                     style={achivements_styles.alpaca_mini}
                     source={require(`../image/a4.png`)}
                     alt={alpaca.name}
                     key={alpaca.name}
+                    source={alpaca.img}
+                    alt={alpaca.img}
+                    key={alpaca.img}
                 />
             </View>
         )
@@ -33,18 +36,18 @@ export const AchivementsScreen = function (): JSX.Element {
 
     const alpacas = [
         {
-            name: "calm_alpaca",
+            img: require("../image/calm_alpaca.png"),
             title: "Calm alpaca",
             description: "Schedule a yoga class 3 times"
         },
         {
-            name: "suprised_alpaca",
+            img: require("../image/suprised_alpaca.png"),
             title: "Suprise alpaca",
             description: "Log in 365 days in a row"
         },
-        { name: "a3" },
-        { name: "a4" },
-        { name: "a5" }
+        { img: require("../image/a3.png") },
+        { img: require("../image/a4.png") },
+        { img: require("../image/a5.png") }
     ];
 
     return (
@@ -61,12 +64,12 @@ export const AchivementsScreen = function (): JSX.Element {
                     <VStack style={achivements_styles.mini_alpacas} space={5}>
                         <HStack space={3}>
                             {
-                                alpacas.slice(0, 3).map(MiniAlpaca)
+                                // alpacas.slice(0, 3).map(MiniAlpaca)
                             }
                         </HStack>
                         <HStack space={3}>
                             {
-                                alpacas.slice(3).map(MiniAlpaca)
+                                // alpacas.slice(3).map(MiniAlpaca)
                             }
                         </HStack>
                         <Text style={achivements_styles.footer}> Congratulations! </Text>

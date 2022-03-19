@@ -4,7 +4,7 @@ import { loading_screen,g_styles } from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const LoadingScreen = function ({navigation}): JSX.Element {
+export const LoadingScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>

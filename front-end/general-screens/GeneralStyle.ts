@@ -62,6 +62,11 @@ export const login_screen = StyleSheet.create({
         height: 40,
         marginRight: 20,
     },
+    button2: {
+        width: 140,
+        height: 40,
+        marginLeft: 20,
+    },
     text: {
         fontSize: 18,
         color: 'white',
@@ -222,23 +227,23 @@ export const achivements_styles = StyleSheet.create({
     alpaca_img: {
         height: 250,
         width: 250,
-        alignSelf: 'center'
+        alignSelf: 'center',
     },
 
     centred_text: {
         alignSelf: 'center',
         fontSize: 34,
-        color: 'white'
+        color: 'white',
     },
 
     mini_alpacas: {
         alignSelf: 'center',
-        marginTop: 15
+        marginTop: 15,
     },
 
     alpaca_mini: {
         height: 100,
-        width: 100
+        width: 100,
     },
 
     footer: {
@@ -249,8 +254,8 @@ export const achivements_styles = StyleSheet.create({
         borderWidth: 4,
         borderRadius: 12,
         backgroundColor: '#9A16A3',
-        borderColor: '#9A16A3'
-    }
+        borderColor: '#9A16A3',
+    },
 });
 
 

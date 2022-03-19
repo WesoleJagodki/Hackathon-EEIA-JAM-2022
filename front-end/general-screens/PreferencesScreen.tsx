@@ -7,7 +7,7 @@ import { g_styles } from "./GeneralStyle";
 import { useState } from "react";
 
 
-export const PreferencesScreen = function ({navigation}): JSX.Element {
+export const PreferencesScreen = function ({navigation} : any): JSX.Element {
     const { isOpen, onOpen, onClose } = useDisclose();
     const [gender, setGender] = useState('Men');
 
