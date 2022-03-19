@@ -1,5 +1,5 @@
 import React, {Image, Text, View} from "react-native";
-import {loading_screen, login_screen} from "./GeneralStyle";
+import {loading_screen} from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";

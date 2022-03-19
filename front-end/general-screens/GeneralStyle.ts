@@ -63,7 +63,7 @@ export const login_screen = StyleSheet.create({
         marginTop: 27,
         fontSize: 20,
     },
-    buttons:{
+    horizontal:{
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginLeft: 39,
@@ -77,5 +77,34 @@ export const login_screen = StyleSheet.create({
     button2: {
         width: 140,
         height: 40,
+    },
+});
+
+export const preferences_screen = StyleSheet.create({
+    title: {
+        textAlign: 'center',
+        marginTop: 72,
+        fontSize: 36,
+        color: 'white',
+    },
+    text1: {
+        fontSize: 20,
+        marginTop: 48,
+        marginLeft: 52,
+        color: 'white',
+    },
+    text2: {
+        fontSize: 20,
+        marginLeft: 52,
+        color: 'white',
+    },
+    horizontal: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    button1: {
+        height: 40,
+        marginTop: 40,
+        backgroundColor: 'transparent',
     },
 });
