@@ -1,6 +1,6 @@
 import React, { View } from "react-native";
 import { NativeBaseProvider, useDisclose, Button, VStack, Actionsheet, Text, HStack } from "native-base";
-import { preferences_screen } from "./GeneralStyle";
+import { settings_styles } from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
@@ -19,11 +19,11 @@ export const PreferencesScreen = function (): JSX.Element {
                 <LinearGradient
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}>
-                    <Text style={preferences_screen.title}>Preferences</Text>
+                    <Text style={settings_styles.title}>Preferences</Text>
                     <VStack>
                         <HStack>
-                            <Text style={preferences_screen.preference_label}>Gender</Text>
-                            <Button style={preferences_screen.gender_selection} onPress={onOpen}>{gender}</Button>
+                            <Text style={settings_styles.preference_label}>Gender</Text>
+                            <Button style={settings_styles.gender_selection} onPress={onOpen}>{gender}</Button>
                             <Actionsheet isOpen={isOpen} onClose={onClose}>
                                 <Actionsheet.Content>
                                     {
@@ -39,7 +39,7 @@ export const PreferencesScreen = function (): JSX.Element {
                             </Actionsheet>
                         </HStack>
                         <HStack>
-                            <Text style={preferences_screen.preference_label}>Age</Text>
+                            <Text style={settings_styles.preference_label}>Age</Text>
                         </HStack>
                     </VStack>
                 </LinearGradient>
