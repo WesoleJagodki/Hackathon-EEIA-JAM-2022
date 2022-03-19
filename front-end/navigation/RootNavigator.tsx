@@ -3,12 +3,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { LoadingScreen } from '../general-screens/LoadingScreen';
 import { LoginScreen } from '../general-screens/LoginScreen';
+import { RegistrationScreen } from '../general-screens/RegistrationScreen';
 
 import { HelpScreen } from "../general-screens/HelpScreen";
 import { SettingsScreen } from "../general-screens/SettingsScreen";
 import { SecurityScreen } from "../general-screens/SecurityScreen";
-import {MainScreen} from "../general-screens/MainScreen";
-import {PreferencesScreen} from "../general-screens/PreferencesScreen";
+import { MainScreen } from "../general-screens/MainScreen";
+import { PreferencesScreen } from "../general-screens/PreferencesScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
         <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Root" component={LoadingScreen} options={{ title: 'Welcome' }}/>
             <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ title: 'Login' }} />
+            <Stack.Screen name="RegistrationScreen" component={RegistrationScreen} options={{ title: 'Register' }} />
             <Stack.Screen name="MainScreen" component={MainScreen} options={{ title: 'Main' }} />
             <Stack.Screen name="PreferencesScreen" component={PreferencesScreen} options={{ title: 'Preferences' }} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
