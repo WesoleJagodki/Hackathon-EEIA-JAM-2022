@@ -63,7 +63,7 @@ export const LoginLoginScreen = function ({ navigation }) {
                 }
               />
               <View onTouchStart={() => navigation.navigate("LoginScreen")} style={login_login_screen.recovery}>
-                <Text>Recovery Password</Text>
+                <Text style={[registration_screen.policy,login_login_screen.login]}>Recovery Password</Text>
               </View>
 
               <Button

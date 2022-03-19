@@ -262,5 +262,9 @@ export const login_login_screen = StyleSheet.create({
     recovery : {
         alignSelf: 'flex-end',
         marginTop: 20,
-    }
+    },
+    login: {
+        color: 'lightgray',
+        fontWeight: "bold",
+    },
 })
