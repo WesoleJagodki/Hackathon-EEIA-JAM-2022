@@ -6,7 +6,7 @@ import { NativeBaseProvider, Button } from "native-base";
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
 
-export const LoginScreen = function (): JSX.Element {
+export const LoginScreen = function ({navigation}): JSX.Element {
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
@@ -25,8 +25,8 @@ export const LoginScreen = function (): JSX.Element {
                     <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
 
                     <View style={login_screen.buttons}>
-                        <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => console.log("hello world")}>Sign in</Button>
-                        <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => console.log("hello world")}>Log in</Button>
+                        <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}>Sign in</Button>
+                        <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => navigation.navigate('HelpScreen')}>Log in</Button>
                     </View>
                 </LinearGradient>
             </View>

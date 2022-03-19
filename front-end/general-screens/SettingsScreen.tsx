@@ -2,8 +2,7 @@ import React, { View } from "react-native";
 import { Text, NativeBaseProvider, VStack } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import { g_styles } from "./GeneralStyle";
-import { settings_styles } from "./GeneralStyle";
+import { g_styles, settings_styles } from "./GeneralStyle";
 
 import { ImageButton } from "../components/ImageButton";
 

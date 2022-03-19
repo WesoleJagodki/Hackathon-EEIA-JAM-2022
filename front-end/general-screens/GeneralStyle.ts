@@ -79,3 +79,43 @@ export const login_screen = StyleSheet.create({
         height: 40,
     },
 });
+
+export const Help_FAQ = StyleSheet.create({
+    mainText: {
+        color: 'white',
+        fontSize: 36,
+        textAlign: "center",
+        marginTop: 70,
+        marginBottom: 20,
+    },
+    boxText: {
+        display: "flex",
+        marginTop: 10,
+        marginBottom: 20,
+        padding: 20,
+        backgroundColor: 'white',
+        alignItems: "center",
+        justifyContent: "center",
+        width: 250,
+        borderRadius: 25,
+    },
+    header: {
+        fontSize: 20,
+    }
+});
+
+export const settings_styles = StyleSheet.create({
+    settings_list: {
+        width: 300,
+        alignSelf: 'center',
+        marginTop: 50,
+        marginRight: 10,
+    },
+
+    heading: {
+        color: 'white',
+        fontSize: 48,
+        alignSelf: 'center',
+        paddingTop: 90,
+    }
+});

@@ -1,8 +1,7 @@
 import React, { Image, Text, View } from "react-native";
-import { loading_screen } from "./GeneralStyle";
+import { loading_screen,g_styles } from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import { g_styles } from "./GeneralStyle";
 
 export const LoadingScreen = function ({ navigation }): JSX.Element {
     return (

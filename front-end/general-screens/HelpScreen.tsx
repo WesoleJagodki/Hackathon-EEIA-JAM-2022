@@ -6,7 +6,7 @@ import { Center } from "native-base";
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
 
-export const HelpFAQ = function (): JSX.Element {
+export const HelpScreen = function (): JSX.Element {
     return (
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
@@ -20,9 +20,7 @@ export const HelpFAQ = function (): JSX.Element {
                     <Center><Box style={Help_FAQ.boxText}><Text style={Help_FAQ.header}>What is Fancity?</Text><Text>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text></Box></Center>
                     <Center><Box style={Help_FAQ.boxText}><Text style={Help_FAQ.header}>What is Fancity?</Text><Text>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text></Box></Center>
                 </LinearGradient>
-
             </ScrollView>
-
         </NativeBaseProvider>
     )
 }
