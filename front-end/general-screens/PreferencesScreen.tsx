@@ -20,10 +20,10 @@ export const PreferencesScreen = function (): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}>
                     <Text style={settings_styles.title}>Preferences</Text>
-                    <VStack>
-                        <HStack>
+                    <VStack style={settings_styles.settings_list} space={5}>
+                        <HStack space={160}>
                             <Text style={settings_styles.preference_label}>Gender</Text>
-                            <Button style={settings_styles.gender_selection} onPress={onOpen}>{gender}</Button>
+                            <Text style={settings_styles.preference_selection} onPress={onOpen}>{gender}</Text>
                             <Actionsheet isOpen={isOpen} onClose={onClose}>
                                 <Actionsheet.Content>
                                     {
@@ -38,8 +38,9 @@ export const PreferencesScreen = function (): JSX.Element {
                                 </Actionsheet.Content>
                             </Actionsheet>
                         </HStack>
-                        <HStack>
+                        <HStack space={180}>
                             <Text style={settings_styles.preference_label}>Age</Text>
+                            <Text style={settings_styles.preference_selection}> 18-31 </Text>
                         </HStack>
                     </VStack>
                 </LinearGradient>

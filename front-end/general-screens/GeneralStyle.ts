@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 export const g_styles = StyleSheet.create({
     container_app: {
@@ -63,7 +63,7 @@ export const login_screen = StyleSheet.create({
         marginTop: 27,
         fontSize: 20,
     },
-    horizontal:{
+    horizontal: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginLeft: 39,
@@ -129,11 +129,9 @@ export const settings_styles = StyleSheet.create({
     preference_label: {
         fontSize: 22,
         color: 'white',
-        marginLeft: 20,
     },
-    gender_selection: {
+    preference_selection: {
         fontSize: 22,
-        backgroundColor: 'transparent',
+        color: 'white'
     },
-
 });
