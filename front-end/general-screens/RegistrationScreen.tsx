@@ -46,19 +46,19 @@ export const RegistrationScreen = function ({navigation}) {
 
           <TextInput style={[registration_screen.input,registration_screen.bmtop]} placeholder="Username" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, username: value })} />
           <TextInput style={registration_screen.input} placeholder="Email" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, email: value })} />
-          <TextInput style={registration_screen.input} placeholder="Password" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, password: value })} />
+          <TextInput style={registration_screen.input} placeholder="Password" secureTextEntry={true} placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, password: value })} />
           <TextInput style={registration_screen.input} placeholder="Birth" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, birth: value })} />
           <TextInput style={registration_screen.input} placeholder="Gender" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, gender: value })} />
           <TextInput style={registration_screen.input} placeholder="Pin" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, pin: value })} />
 
           <View style={registration_screen.mtop}>
-            <Checkbox><Text style={registration_screen.policy}>I agree to the Terms of Service and Privacy Policy</Text></Checkbox>
+            <Checkbox value="value"><Text style={registration_screen.policy}>I agree to the Terms of Service and Privacy Policy</Text></Checkbox>
           </View>
           <Button style={registration_screen.button} onPress={onSubmit} colorScheme="fuchsia">
             <Text style={login_screen.text}>Sign in</Text>
           </Button>
           <HStack style={registration_screen.mtop}>
-            <Text style={registration_screen.policy}>Already have an account?</Text><View onTouchStart={() => navigation.navigate('LoginScreen')}><Text style={[registration_screen.policy,registration_screen.login]}>Log In</Text></View>
+            <Text style={registration_screen.policy}>Already have an account?</Text><View onTouchStart={() => navigation.navigate('LoginLoginScreen')}><Text style={[registration_screen.policy,registration_screen.login]}>Log In</Text></View>
           </HStack>
         </Center>
       </LinearGradient>
