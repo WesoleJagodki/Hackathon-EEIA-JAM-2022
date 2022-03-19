@@ -70,4 +70,12 @@ export const login_screen = StyleSheet.create({
         marginRight: 39,
         marginTop: 103,
     },
+    button1: {
+        width: 140,
+        height: 40,
+    },
+    button2: {
+        width: 140,
+        height: 40,
+    },
 });

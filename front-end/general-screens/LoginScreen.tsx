@@ -26,17 +26,10 @@ export const LoginScreen = function (): JSX.Element {
                     source={sub}
                 />
                 <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
-                <Input mx="3" placeholder="Input" w="75%" maxWidth="300px" />
 
                 <View style={login_screen.buttons}>
-                    <Button
-                        title="Left button"
-                        onPress={() => Alert.alert('Left button pressed')}
-                    />
-                    <Button
-                        title="Right button"
-                        onPress={() => Alert.alert('Right button pressed')}
-                    />
+                    <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => console.log("hello world")}>Sign in</Button>
+                    <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => console.log("hello world")}>Log in</Button>
                 </View>
             </View>
 
