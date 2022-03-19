@@ -9,9 +9,8 @@ export const LoadingScreen = function ({ navigation }): JSX.Element {
         <View style={g_styles.container_app}>
             <LinearGradient
                 colors={['rgba(22,6,81,100)', 'transparent']}
-                style={g_styles.background}
-            >
-                <View onStartShouldSetResponder={() => navigation.navigate('SettingsScreen')}>
+                style={g_styles.background}>
+                <View onStartShouldSetResponder={() => navigation.navigate('LoginScreen')}>
                     <Image
                         style={loading_screen.logo1}
                         source={require("../image/city.png")}
