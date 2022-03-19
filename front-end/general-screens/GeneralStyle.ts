@@ -90,6 +90,12 @@ export const Help_FAQ = StyleSheet.create({
     header: {
         fontSize: 20,
         fontWeight: "bold",
+    },
+    botton: {
+        marginTop: 20,
+        marginBottom: 50,
+        width: 230,
+        height: 40,
     }
 });
 
@@ -140,7 +146,12 @@ export const preferences_screen = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: 300,
-    }
+    },
+    button: {
+        marginTop: 475,
+        width: 230,
+        height: 40,
+    },
 });
 
 export const security_screen = StyleSheet.create({
@@ -159,8 +170,9 @@ export const security_screen = StyleSheet.create({
         width: 24,
     },
     menuButton: {
-        marginTop: 200,
-        width: 200,
+        marginTop: 400,
+        width: 230,
+        height: 40,
     }
 });
 
@@ -187,6 +199,7 @@ export const registration_screen = StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         width: 310,
+        color: 'black',
     },
     policy: {
         color: 'white',

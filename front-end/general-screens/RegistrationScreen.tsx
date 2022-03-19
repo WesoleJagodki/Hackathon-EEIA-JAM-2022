@@ -44,12 +44,12 @@ export const RegistrationScreen = function ({navigation}) {
           <Text style={[registration_screen.h1, registration_screen.mtop]}>Create an account so you can</Text>
           <Text style={registration_screen.h1}>manage your fancy life</Text>
 
-          <TextInput style={[registration_screen.input,registration_screen.bmtop]} placeholder="Username" onChangeText={value => setData({ ...formData, username: value })} />
-          <TextInput style={registration_screen.input} placeholder="Email" onChangeText={value => setData({ ...formData, email: value })} />
-          <TextInput style={registration_screen.input} placeholder="Password" onChangeText={value => setData({ ...formData, password: value })} />
-          <TextInput style={registration_screen.input} placeholder="Birth" onChangeText={value => setData({ ...formData, birth: value })} />
-          <TextInput style={registration_screen.input} placeholder="Gender" onChangeText={value => setData({ ...formData, gender: value })} />
-          <TextInput style={registration_screen.input} placeholder="Pin" onChangeText={value => setData({ ...formData, pin: value })} />
+          <TextInput style={[registration_screen.input,registration_screen.bmtop]} placeholder="Username" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, username: value })} />
+          <TextInput style={registration_screen.input} placeholder="Email" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, email: value })} />
+          <TextInput style={registration_screen.input} placeholder="Password" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, password: value })} />
+          <TextInput style={registration_screen.input} placeholder="Birth" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, birth: value })} />
+          <TextInput style={registration_screen.input} placeholder="Gender" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, gender: value })} />
+          <TextInput style={registration_screen.input} placeholder="Pin" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, pin: value })} />
 
           <View style={registration_screen.mtop}>
             <Checkbox><Text style={registration_screen.policy}>I agree to the Terms of Service and Privacy Policy</Text></Checkbox>
