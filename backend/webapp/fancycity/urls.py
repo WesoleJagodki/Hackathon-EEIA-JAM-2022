@@ -10,12 +10,17 @@ class HelloView(APIView):
         content = {'message': 'Hello, World!'}
         return Response(content)
 
+from fancycity.views import UserApiView
+
+
+
 
 
 from django.urls import path
 
 urlpatterns = [
     path('hello/', HelloView.as_view(), name='hello'),
+    path('user/', UserApiView.as_view())
 ]
 
 
