@@ -30,13 +30,15 @@ export const LoginScreen = function (): JSX.Element {
 
                 <View style={login_screen.buttons}>
                     <Button
-                        title="Left button"
                         onPress={() => Alert.alert('Left button pressed')}
-                    />
+                    >
+                        Left button
+                        </Button>
                     <Button
-                        title="Right button"
                         onPress={() => Alert.alert('Right button pressed')}
-                    />
+                    >
+                        Right button
+                    </Button>
                 </View>
             </View>
 
