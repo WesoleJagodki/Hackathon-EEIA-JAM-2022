@@ -1,5 +1,6 @@
 import attr
 from django.db.utils import IntegrityError
+from fancy.locations.location_services import LocationService, LocationType
 from fancycity.models import UserModel
 from fancycity.serializers import UserRegisterSerializer, UserSerializer
 from rest_framework import status
@@ -27,3 +28,11 @@ class UserApiView(APIView):
             )
 
         return Response()
+
+
+class LocationApiView(APIView):
+    # permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        location_svc = LocationService("51.7526928,19.4534678")
+        return Response(location_svc.get_nearby_locations(LocationType.BAR))

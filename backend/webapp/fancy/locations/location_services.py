@@ -1,15 +1,14 @@
 import attr
 import requests
 from fancy.locations.location import Location
-from rich import print
 from shared.enum import StrEnum
 
 
 class LocationType(StrEnum):
     RESTAURANT = "restaurant"
-    CINEMA = "cinema"
+    GYM = "gym"
     BAR = "bar"
-    SHOP = "shop"
+    SHOPPING_MALL = "shopping_mall"
 
 
 @attr.s(auto_attribs=True)
@@ -17,10 +16,8 @@ class LocationService:
     location: str
 
     def get_nearby_locations(self, location_type: LocationType, radius=500):
-        types = ",".join(location_type)
-
         response = requests.get(
-
+            f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={self.location}&radius={radius}&types={location_type}&key=AIzaSyDw5p7xB91pcHhlwFWodXYkU-5anR-MQr4"
         )
 
         if not response.ok:
@@ -32,8 +29,3 @@ class LocationService:
             locations.append(Location.from_dict(result))
 
         return locations
-
-
-srv = LocationService("51.7526928,19.4534678")
-locations = srv.get_nearby_locations("Museum")
-print(locations)
