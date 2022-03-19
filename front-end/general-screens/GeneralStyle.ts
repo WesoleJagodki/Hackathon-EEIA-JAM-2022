@@ -79,27 +79,3 @@ export const login_screen = StyleSheet.create({
         height: 40,
     },
 });
-
-export const Help_FAQ = StyleSheet.create({
-    mainText: {
-        color: 'white',
-        fontSize: 36,
-        textAlign: "center",
-        marginTop: 70,
-        marginBottom: 20,
-    },
-    boxText: {
-        display: "flex",
-        marginTop: 10,
-        marginBottom: 20,
-        padding: 20,
-        backgroundColor: 'white',
-        alignItems: "center",
-        justifyContent: "center",
-        width: 250,
-        borderRadius: 25,
-    },
-    header: {
-        fontSize: 20,
-    }
-});
