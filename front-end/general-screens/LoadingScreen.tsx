@@ -14,7 +14,7 @@ export const LoadingScreen = function({navigation}): JSX.Element {
                 colors={['rgba(22,6,81,100)', 'transparent']}
                 style={g_styles.background}
             />
-            <div onClick={() => navigation.navigate('LoginScreen')}>
+            <View onStartShouldSetResponder={() => navigation.navigate('LoginScreen')}>
                 <Image
                     style={loading_screen.logo1}
                     source={city}
@@ -24,7 +24,7 @@ export const LoadingScreen = function({navigation}): JSX.Element {
                     source={sub}
                 />
                 <Text style={loading_screen.h2}>closed, luxurious city in your pocket</Text>
-            </div>
+            </View>
         </View>
     )
 }
