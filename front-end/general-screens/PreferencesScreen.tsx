@@ -41,7 +41,7 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
                             </View>
                             <View style={preferences_screen.option}>
                                 <Text style={preferences_screen.label}>Age</Text>
-                                <Text style={preferences_screen.selection}> 18-31</Text>
+                                <Text style={preferences_screen.selection}>18-31</Text>
                             </View>
                         </VStack>
                         <Button style={preferences_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>

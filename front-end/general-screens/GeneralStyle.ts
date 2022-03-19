@@ -146,6 +146,8 @@ export const preferences_screen = StyleSheet.create({
     selection: {
         fontSize: 22,
         color: 'white',
+        borderBottomWidth: 1,
+        borderBottomColor: "white",
     },
     option: {
         flexDirection: 'row',
