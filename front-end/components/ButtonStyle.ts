@@ -12,7 +12,14 @@ export const button_style = StyleSheet.create({
         fontSize: 21,
         color: 'white',
         textAlign: 'left',
+        width: 300,
+        height: 30,
+    },
+    button_text_security: {
+        fontSize: 21,
+        color: 'white',
+        textAlign: 'left',
         width: 270,
         height: 30,
-    }
+    },
 });

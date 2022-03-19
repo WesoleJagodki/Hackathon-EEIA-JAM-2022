@@ -20,7 +20,7 @@ export const SecurityScreen = function ({navigation}): JSX.Element {
                         <HStack position={'relative'} left={-7} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.shield} source={require("../image/shield.png")}/><ImageButton text="Two-factor authentication"/></HStack>
                         <HStack position={'relative'} left={-8} onTouchStart={() => {navigation.navigate('HelpScreen')}}><Image style={security_screen.questionmark} source={require("../image/help-circle.png")}/><ImageButton text="Learn more about security"/></HStack>
                     </VStack>
-                    <Center><Button style={security_screen.menuButton} colorScheme="fuchsia" onPress={() => navigation.navigate('LoginScreen')}>Back to settings</Button></Center>
+                    <Center><Button style={security_screen.menuButton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}>Back to settings</Button></Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>
