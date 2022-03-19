@@ -51,11 +51,13 @@ export const RegistrationScreen = function ({navigation}) {
           <TextInput style={registration_screen.input} placeholder="Gender" onChangeText={value => setData({ ...formData, gender: value })} />
           <TextInput style={registration_screen.input} placeholder="Pin" onChangeText={value => setData({ ...formData, pin: value })} />
 
-          <Checkbox style={registration_screen.checkbox}><Text style={registration_screen.policy}>I agree to the Terms of Service and Privacy Policy</Text></Checkbox>
+          <View style={registration_screen.mtop}>
+            <Checkbox><Text style={registration_screen.policy}>I agree to the Terms of Service and Privacy Policy</Text></Checkbox>
+          </View>
           <Button style={registration_screen.button} onPress={onSubmit} colorScheme="fuchsia">
             <Text style={login_screen.text}>Sign in</Text>
           </Button>
-          <HStack>
+          <HStack style={registration_screen.mtop}>
             <Text style={registration_screen.policy}>Already have an account?</Text><View onTouchStart={() => navigation.navigate('LoginScreen')}><Text style={[registration_screen.policy,registration_screen.login]}>Log In</Text></View>
           </HStack>
         </Center>

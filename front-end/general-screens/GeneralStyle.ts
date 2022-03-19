@@ -189,14 +189,9 @@ export const registration_screen = StyleSheet.create({
         width: 310,
     },
     policy: {
-        marginTop: 27,
         color: 'white',
         fontSize: 13,
-
-    },
-    checkbox: {
-        marginTop: 27,
-        marginRight: 5,
+        marginLeft: 5,
     },
     button: {
         width: 140,
