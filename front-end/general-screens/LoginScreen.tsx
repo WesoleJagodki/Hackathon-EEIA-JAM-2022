@@ -1,10 +1,7 @@
 import React, { Image, Text, View} from "react-native";
 import { login_screen } from "./GeneralStyle";
 
-import city from "../image/city.png";
-import sub from "../image/FANCITY.png";
-
-import { Input, NativeBaseProvider, Button } from "native-base";
+import { NativeBaseProvider, Button } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
@@ -18,11 +15,11 @@ export const LoginScreen = function (): JSX.Element {
                     style={g_styles.background}>
                     <Image
                         style={login_screen.logo1}
-                        source={city}
+                        source={require('../image/city.png')}
                     />
                     <Image
                         style={login_screen.logo2}
-                        source={sub}
+                        source={require('../image/FANCITY.png')}
                     />
                     <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
 
