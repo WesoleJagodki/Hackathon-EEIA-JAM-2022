@@ -1,6 +1,6 @@
 import React, { View } from "react-native";
 import { NativeBaseProvider, useDisclose, Button, VStack, Actionsheet, Text, HStack } from "native-base";
-import { settings_styles } from "./GeneralStyle";
+import { settings_styles, preferences_screen } from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
@@ -21,9 +21,9 @@ export const PreferencesScreen = function (): JSX.Element {
                     style={g_styles.background}>
                     <Text style={settings_styles.title}>Preferences</Text>
                     <VStack style={settings_styles.settings_list} space={5}>
-                        <HStack space={160}>
-                            <Text style={settings_styles.preference_label}>Gender</Text>
-                            <Text style={settings_styles.preference_selection} onPress={onOpen}>{gender}</Text>
+                        <View style={preferences_screen.option}>
+                            <Text style={preferences_screen.label}>Gender</Text>
+                            <Text style={preferences_screen.selection} onPress={onOpen}>{gender}</Text>
                             <Actionsheet isOpen={isOpen} onClose={onClose}>
                                 <Actionsheet.Content>
                                     {
@@ -37,11 +37,11 @@ export const PreferencesScreen = function (): JSX.Element {
                                     }
                                 </Actionsheet.Content>
                             </Actionsheet>
-                        </HStack>
-                        <HStack space={180}>
-                            <Text style={settings_styles.preference_label}>Age</Text>
-                            <Text style={settings_styles.preference_selection}> 18-31 </Text>
-                        </HStack>
+                        </View>
+                        <View style={preferences_screen.option}>
+                            <Text style={preferences_screen.label}>Age</Text>
+                            <Text style={preferences_screen.selection}> 18-31</Text>
+                        </View>
                     </VStack>
                 </LinearGradient>
             </View>

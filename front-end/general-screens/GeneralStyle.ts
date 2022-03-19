@@ -123,17 +123,25 @@ export const settings_styles = StyleSheet.create({
 
     title: {
         textAlign: 'center',
-        marginTop: 72,
+        paddingTop: 90,
         marginBottom: 20,
         fontSize: 36,
         color: 'white',
     },
-    preference_label: {
+});
+
+export const preferences_screen = StyleSheet.create({
+   label: {
         fontSize: 22,
         color: 'white',
     },
-    preference_selection: {
+    selection: {
         fontSize: 22,
-        color: 'white'
+        color: 'white',
     },
+    option: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: 300,
+    }
 });
