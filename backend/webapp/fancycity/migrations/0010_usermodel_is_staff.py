@@ -6,13 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fancycity', '0009_alter_usermodel_options_alter_usermodel_managers_and_more'),
+        ("fancycity", "0009_alter_usermodel_options_alter_usermodel_managers_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='usermodel',
-            name='is_staff',
-            field=models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.', verbose_name='staff status'),
+            model_name="usermodel",
+            name="is_staff",
+            field=models.BooleanField(
+                default=False,
+                help_text="Designates whether the user can log into this admin site.",
+                verbose_name="staff status",
+            ),
         ),
     ]

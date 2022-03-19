@@ -14,24 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from django.urls import path
+from django.urls import include, path
 from rest_framework_simplejwt import views as jwt_views
-from django.urls import path, include
-from django.contrib.auth.models import User
-from rest_framework import routers, serializers, viewsets
-
-
-
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/api-auth/', include('rest_framework.urls')),
-    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/', include("fancycity.urls"), name='fancyffff'),
+    path("admin/", admin.site.urls),
+    path("api/api-auth/", include("rest_framework.urls")),
+    path(
+        "api/token/", jwt_views.TokenObtainPairView.as_view(), name="token_obtain_pair"
+    ),
+    path(
+        "api/token/refresh/", jwt_views.TokenRefreshView.as_view(), name="token_refresh"
+    ),
+    path("api/", include("fancycity.urls"), name="fancyffff"),
 ]
-
 
 
 # https://app.getpostman.com/join-team?invite_code=9fd2f6af0e490cb0198bdc9a4e4471f1

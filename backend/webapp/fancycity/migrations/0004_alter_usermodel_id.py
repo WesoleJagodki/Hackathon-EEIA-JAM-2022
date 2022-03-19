@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fancycity', '0003_rename_user_usermodel'),
+        ("fancycity", "0003_rename_user_usermodel"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='usermodel',
-            name='id',
+            model_name="usermodel",
+            name="id",
             field=models.UUIDField(editable=False, primary_key=True, serialize=False),
         ),
     ]

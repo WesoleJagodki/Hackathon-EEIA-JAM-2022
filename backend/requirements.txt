@@ -1,4 +1,9 @@
 django
+autoflake
+bcrypt
+mypy
+isort
+black
 rich
 attrs
 djangorestframework_simplejwt
