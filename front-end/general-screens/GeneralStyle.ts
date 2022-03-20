@@ -499,6 +499,20 @@ export const main_menu = StyleSheet.create({
         marginTop: 5,
         left: 100,
     },
+    arrowback: {
+        width: 10,
+        height: 35,
+        position: "relative",
+        marginTop: 73,
+        marginRight: 70,
+    },
+    shop: {
+        width: 24,
+        height: 24,
+        position: "relative",
+        marginTop: 80,
+        marginLeft: 70,
+    },
 });
 
 export const weather_styles = StyleSheet.create({
