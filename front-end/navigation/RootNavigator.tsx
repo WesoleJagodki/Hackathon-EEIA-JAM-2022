@@ -16,6 +16,8 @@ import { InformationScreen } from "../general-screens/InformationScreen";
 import { AccountScreen } from "../general-screens/AccountScreen";
 import { FoodScreen } from "../general-screens/FoodScreen";
 import { HealthScreen } from "../general-screens/HealthScreen";
+import { PsychiatristsScreen } from "../general-screens/PsychiatristsScreen";
+import { PsychologistsScreen } from "../general-screens/PsychologistsScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +38,8 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
             <Stack.Screen name="FoodScreen" component={FoodScreen} options={{ title: 'Food' }} />
             <Stack.Screen name="HealthScreen" component={HealthScreen} options={{ title: 'Health' }} />
+            <Stack.Screen name="PsychiatristsScreen" component={PsychiatristsScreen} options={{ title: 'Psychiatrists' }} />
+            <Stack.Screen name="PsychologistsScreen" component={PsychologistsScreen} options={{ title: 'Psychologists' }} />
         </Stack.Navigator>
     );
 }

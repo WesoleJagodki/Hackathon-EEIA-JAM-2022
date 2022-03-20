@@ -581,4 +581,20 @@ export const health_styles = StyleSheet.create({
         marginTop: 65,
         right: 40,
     },
+    container:{
+        marginLeft: 25,
+        marginRight: 25,
+        marginBottom: 30,
+    },
+    doctor:{
+        borderRadius: 15,
+        height: 129,
+        width: 129,
+        marginLeft: 15,
+        marginRight: 15,
+    },
+    star:{
+        height: 20,
+        width: 20,
+    },
 });
