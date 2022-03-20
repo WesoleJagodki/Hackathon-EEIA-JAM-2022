@@ -532,3 +532,30 @@ export const weather_styles = StyleSheet.create({
         marginLeft: 30
     }
 });
+
+export const time_styles = StyleSheet.create({
+    heading: {
+        color: 'white',
+        fontSize: 36,
+        alignSelf: 'center',
+        paddingTop: 90,
+    },
+
+    auto: {
+        width: 24,
+        height: 24,
+    },
+
+    auto_btn: {
+        width: 70,
+        height: 70,
+        backgroundColor: 'white',
+        borderRadius: 24
+    },
+
+    text: {
+        color: 'white',
+        margin: 20,
+        fontSize: 24
+    }
+});
