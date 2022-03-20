@@ -505,13 +505,13 @@ export const weather_styles = StyleSheet.create({
     header: {
         color: 'white',
         fontSize: 24,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        paddingTop: 2,
     },
 
     img: {
         position: "relative",
-        top: 10,
-        width: 30,
+        width: 25,
         height: 20,
     },
 

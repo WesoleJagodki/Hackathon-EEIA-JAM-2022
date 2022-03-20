@@ -21,7 +21,7 @@ function Weather({ temperature, humidity, conditions, wind }: WeatherInfo) {
         <View>
             <Center>
                 <VStack space={3}>
-                    <Text style={weather_styles.header}> {conditions} </Text>
+                    <Text style={weather_styles.header} fontWeight={"bold"}> {conditions.slice(0,1).toUpperCase()+conditions.slice(1)} </Text>
                     <HStack space={3} style={weather_styles.top}>
                         <Text style={weather_styles.header}> {temperature}°C </Text>
                         <Image style={weather_styles.conditions} source={require('../image/chmurka.png')}></Image>

@@ -1,10 +1,10 @@
-import React, { View } from "react-native";
+import React, { View,  Image } from "react-native";
 import { useState } from "react";
-import { Text, NativeBaseProvider, Image, VStack, HStack, Button, Center } from "native-base";
+import { Text, NativeBaseProvider, VStack, HStack, Button, Center } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import {g_styles, settings_styles, achivements_styles, login_screen} from "./GeneralStyle";
-import {AlpakaModal} from "../modal/AlpakaModal";
+import { AlpakaModal } from "../modal/AlpakaModal";
 
 const ALPACAS = [
     {
@@ -24,7 +24,7 @@ const ALPACAS = [
 
 export const AchivementsScreen = function ({navigation} : any): JSX.Element {
     const [showModal, setShowModal] = useState(false);
-    const [popupData, setPopupData] = useState({ title: null, description: null, img: null});
+    const [popupData, setPopupData] = useState({img: null, title: null, description: null});
 
     function MiniAlpaca(alpaca: any): JSX.Element {
         const data = { title: alpaca.title, description: alpaca.description, img: alpaca.img};
@@ -56,7 +56,7 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                 >
                     <Center>
                         <Text style={settings_styles.heading}>Achievements</Text>
-                        <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt="Alpaca"></Image>
+                        <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt="Alpaca"/>
                         <Text style={achivements_styles.centred_text}>Fulfilled alpaca dreams</Text>
 
                         <VStack style={achivements_styles.mini_alpacas} space={5}>
