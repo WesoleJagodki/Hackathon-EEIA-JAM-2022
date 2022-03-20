@@ -252,7 +252,6 @@ export const achivements_styles = StyleSheet.create({
     },
 });
 
-
 export const login_login_screen = StyleSheet.create({
     image: {
         height: 300,
@@ -317,4 +316,34 @@ export const information_screen = StyleSheet.create({
         width: 230,
         height: 40,
     },
+});
+
+export const account_screen = StyleSheet.create({
+    big_image: {
+        width: 80,
+        height: 80
+    },
+
+    small_image: {
+        width: 40,
+        height: 40,
+        marginTop: 10
+    },
+
+    centred_text: {
+        color: 'white',
+        fontSize: 24,
+        marginTop: 15,
+    },
+
+    small_centred_text: {
+        color: 'white',
+        fontSize: 18,
+        marginTop: 10
+    },
+
+    button: {
+        marginTop: 140,
+        width: 300,
+    }
 });

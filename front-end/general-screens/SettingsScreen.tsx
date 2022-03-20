@@ -16,7 +16,7 @@ export const SettingsScreen = function ({navigation} : any): JSX.Element {
                     <Center>
                         <Text style={settings_styles.heading}> Settings </Text>
                         <VStack space={5} style={settings_styles.settings_list}>
-                            <ImageButton text="Account" onClick={() => {navigation.navigate('AchivementsScreen')}}/>
+                            <ImageButton text="Account" onClick={() => {navigation.navigate('AccountScreen')}}/>
                             <ImageButton text="Preferences" onClick={() => {navigation.navigate('PreferencesScreen')}}/>
                             <ImageButton text="Password & Security" onClick={() => {navigation.navigate('SecurityScreen')}}/>
                             <ImageButton text="Help & FAQ" onClick={() => {navigation.navigate('HelpScreen')}}/>

@@ -13,6 +13,7 @@ import { MainScreen } from "../general-screens/MainScreen";
 import { PreferencesScreen } from "../general-screens/PreferencesScreen";
 import { AchivementsScreen } from "../general-screens/AchivementsScreen";
 import { InformationScreen } from "../general-screens/InformationScreen";
+import { AccountScreen } from "../general-screens/AccountScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="HelpScreen" component={HelpScreen} options={{ title: 'Help' }} />
             <Stack.Screen name="AchivementsScreen" component={AchivementsScreen} options={{ title: 'Achivements' }} />
             <Stack.Screen name="InformationScreen" component={InformationScreen} options={{ title: 'Information' }} />
+            <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
         </Stack.Navigator>
     );
 }
