@@ -1,4 +1,4 @@
-import React, { View, ScrollView } from "react-native";
+import React, {View, ScrollView, Image} from "react-native";
 import { Text, NativeBaseProvider, HStack, Center, Input, Box } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
@@ -14,7 +14,7 @@ export const HealthScreen = function ({ navigation }: any): JSX.Element {
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                                <Image style={main_menu.arrowback} source={require("../image/ArrowBack.png")}/>
+                                <Image style={health_styles .arrowback} source={require("../image/ArrowBack.png")}/>
                             </View>
 
                             <Text style={settings_styles.heading}>Health Care</Text>
@@ -23,7 +23,7 @@ export const HealthScreen = function ({ navigation }: any): JSX.Element {
                     </Center>
                     <Text style={health_styles.hello}>Hello.</Text>
                     <Text style={health_styles.gentle_ask}>How can we help you today?</Text>
-                    <Input placeholder="Search" variant="filled" borderRadius="10" py="1" px="2" borderWidth="0" margin="10px"/>
+                    <Input placeholder="Search" variant="filled" borderRadius="10" py="2" px="2" borderWidth="0" margin="10px"/>
                     <ScrollView horizontal={true}>
                         <Box style={health_styles.info}>
                             <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychologist</Text>

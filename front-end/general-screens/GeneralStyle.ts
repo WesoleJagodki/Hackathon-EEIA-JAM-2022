@@ -574,4 +574,11 @@ export const health_styles = StyleSheet.create({
     box: {
       marginBottom: 300,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 40,
+    },
 });
