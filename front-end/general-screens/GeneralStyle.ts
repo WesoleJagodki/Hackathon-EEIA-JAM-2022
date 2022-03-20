@@ -532,3 +532,31 @@ export const weather_styles = StyleSheet.create({
         marginLeft: 30
     }
 });
+
+
+export const health_styles = StyleSheet.create({
+    hello: {
+        color: '#9A16A3',
+        fontSize: 24,
+        marginLeft: 10,
+        paddingTop: 5
+    },
+
+    gentle_ask: {
+        color: 'white',
+        fontSize: 18,
+        marginLeft: 10
+    },
+
+    info: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+        backgroundColor: 'rgba(255,255,255,0.2)',
+        marginBottom: 15,
+        marginRight: 10,
+        padding: 10,
+        width: 128,
+        height: 72,
+    }
+});
