@@ -2,8 +2,18 @@ import React, { useState } from "react";
 import { TextInput, View } from "react-native";
 import {Text, Button, Center, Checkbox, HStack} from "native-base";
 import {g_styles, registration_screen, login_screen} from "./GeneralStyle";
-
+import axios from 'axios';
 import { LinearGradient } from "expo-linear-gradient";
+import { BACKEND_URL } from '../api/credentials';
+
+async function register(data, navigator) {
+    try {
+        // TODO add some loading spinner or popup
+        await axios.post(`${BACKEND_URL}/api/user/`, { ...data });
+        navigator.navigate("LoginLoginScreen")
+    } catch(error) { }
+}
+
 
 export const RegistrationScreen = function ({navigation} : any) {
   const [formData, setData] = useState({});
@@ -13,7 +23,7 @@ export const RegistrationScreen = function ({navigation} : any) {
     "username",
     "email",
     "password",
-    "birth",
+    "birthdate",
     "gender",
     "pin",
   ];
@@ -30,7 +40,11 @@ export const RegistrationScreen = function ({navigation} : any) {
   };
   const onSubmit = () => {
     setErrors({});
-    validate() ? navigation.navigate('LoginScreen') : console.log("Validation Failed");
+    if (validate()) {
+    (async () => {
+        await register(formData, navigation)
+    })()
+    }
   };
 
   return (
@@ -47,7 +61,7 @@ export const RegistrationScreen = function ({navigation} : any) {
           <TextInput style={[registration_screen.input,registration_screen.bmtop]} placeholder="Username" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, username: value })} />
           <TextInput style={registration_screen.input} placeholder="Email" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, email: value })} />
           <TextInput style={registration_screen.input} placeholder="Password" secureTextEntry={true} placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, password: value })} />
-          <TextInput style={registration_screen.input} placeholder="Birth" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, birth: value })} />
+          <TextInput style={registration_screen.input} placeholder="Birth" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, birthdate: value })} />
           <TextInput style={registration_screen.input} placeholder="Gender" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, gender: value })} />
           <TextInput style={registration_screen.input} placeholder="Pin" placeholderTextColor={"gray"} onChangeText={value => setData({ ...formData, pin: value })} />
 

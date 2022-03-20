@@ -1,0 +1,16 @@
+django
+django-cors-headers
+autoflake
+bcrypt
+mypy
+isort
+black
+rich
+attrs
+djangorestframework_simplejwt
+djangorestframework
+markdown
+django-filter
+marshmallow
+django-rest-marshmallow
+requests
