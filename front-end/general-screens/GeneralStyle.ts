@@ -139,6 +139,13 @@ export const settings_styles = StyleSheet.create({
     logout: {
       marginTop: 320,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 40,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
