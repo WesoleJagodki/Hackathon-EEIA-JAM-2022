@@ -1,13 +1,13 @@
 import React, { View } from "react-native";
-import { NativeBaseProvider, useDisclose, Center, VStack, Actionsheet, Text} from "native-base";
-import { settings_styles, preferences_screen } from "./GeneralStyle";
+import {NativeBaseProvider, useDisclose, Center, VStack, Actionsheet, Text, Button} from "native-base";
+import {settings_styles, preferences_screen, security_screen, login_screen} from "./GeneralStyle";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles } from "./GeneralStyle";
 import { useState } from "react";
 
 
-export const PreferencesScreen = function (): JSX.Element {
+export const PreferencesScreen = function ({navigation} : any): JSX.Element {
     const { isOpen, onOpen, onClose } = useDisclose();
     const [gender, setGender] = useState('Men');
 
@@ -41,9 +41,10 @@ export const PreferencesScreen = function (): JSX.Element {
                             </View>
                             <View style={preferences_screen.option}>
                                 <Text style={preferences_screen.label}>Age</Text>
-                                <Text style={preferences_screen.selection}> 18-31</Text>
+                                <Text style={preferences_screen.selection}>18-31</Text>
                             </View>
                         </VStack>
+                        <Button style={preferences_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>
                     </Center>
                 </LinearGradient>
             </View>

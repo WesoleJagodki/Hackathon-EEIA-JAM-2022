@@ -70,7 +70,6 @@ export const login_screen = StyleSheet.create({
     text: {
         fontSize: 18,
         color: 'white',
-        fontWeight: "bold"
     },
 });
 
@@ -96,6 +95,12 @@ export const Help_FAQ = StyleSheet.create({
     header: {
         fontSize: 20,
         fontWeight: "bold",
+    },
+    botton: {
+        marginTop: 20,
+        marginBottom: 50,
+        width: 230,
+        height: 40,
     }
 });
 
@@ -131,6 +136,9 @@ export const settings_styles = StyleSheet.create({
         fontSize: 36,
         color: 'white',
     },
+    logout: {
+      marginTop: 320,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
@@ -141,12 +149,19 @@ export const preferences_screen = StyleSheet.create({
     selection: {
         fontSize: 22,
         color: 'white',
+        borderBottomWidth: 1,
+        borderBottomColor: "white",
     },
     option: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: 300,
-    }
+    },
+    button: {
+        marginTop: 475,
+        width: 230,
+        height: 40,
+    },
 });
 
 export const security_screen = StyleSheet.create({
@@ -165,8 +180,171 @@ export const security_screen = StyleSheet.create({
         width: 24,
     },
     menuButton: {
-        marginTop: 200,
+        marginTop: 400,
+        width: 230,
+        height: 40,
+    }
+});
+
+export const registration_screen = StyleSheet.create({
+    title: {
+        color: 'white',
+        fontSize: 34,
+        paddingTop: 90,
+    },
+    mtop: {
+        marginTop: 20,
+    },
+    bmtop: {
+        marginTop: 40,
+    },
+    h1: {
+        color: "white",
+        fontSize: 20,
+        textAlign: "center",
+    },
+    input: {
+        backgroundColor: "#F6F6F6",
+        marginTop: 20,
+        padding: 10,
+        borderRadius: 10,
+        width: 310,
+        color: 'black',
+    },
+    policy: {
+        color: 'white',
+        fontSize: 13,
+        marginLeft: 5,
+    },
+    button: {
+        width: 140,
+        height: 40,
+        marginTop: 39,
+    },
+    login: {
+        marginLeft: 5,
+        color: '#FFA68B',
+        fontWeight: "bold",
+    },
+});
+
+export const achivements_styles = StyleSheet.create({
+    alpaca_img: {
+        height: 300,
+        width: 300,
+    },
+    centred_text: {
+        fontSize: 30,
+        color: 'white',
+       paddingTop: 10,
+    },
+    mini_alpacas: {
+        marginTop: 15,
+    },
+    alpaca_mini: {
+        height: 100,
+        width: 100,
+    },
+    button: {
+        marginTop: 45,
+        width: 230,
+        height: 40,
+    },
+});
+
+export const login_login_screen = StyleSheet.create({
+    image: {
+        height: 300,
+        width: 300,
+    },
+    recovery : {
+        alignSelf: 'flex-end',
+        marginTop: 20,
+    },
+    login: {
+        color: 'lightgray',
+        fontWeight: "bold",
+    },
+});
+
+export const information_screen = StyleSheet.create({
+   header: {
+       color: 'white',
+       fontSize: 36,
+       textAlign: "center",
+       marginTop: 70,
+       marginBottom: 20,
+   },
+    text: {
+        marginTop: 33,
+        width: 310,
+        color: 'white',
+        fontSize: 13,
+        textAlign: "justify",
+    },
+    list: {
+        color: 'white',
+        fontSize: 13,
+        marginTop: 5,
+        width: 310,
+        textAlign: "justify",
+    },
+    header2: {
+        color: 'white',
+        fontSize: 22,
+        width: 310,
+        textAlign: "justify",
+        marginTop: 87,
+    },
+    image1: {
         width: 200,
+        height: 200,
+    },
+    image2: {
+        width: 190,
+        height: 100,
+        marginTop: 50,
+    },
+    image3: {
+        width: 200,
+        height: 75,
+        marginTop: 20,
+    },
+    button: {
+        marginTop: 40,
+        marginBottom: 50,
+        width: 230,
+        height: 40,
+    },
+});
+
+export const account_screen = StyleSheet.create({
+    big_image: {
+        width: 80,
+        height: 80
+    },
+
+    small_image: {
+        width: 40,
+        height: 40,
+        marginTop: 10
+    },
+
+    centred_text: {
+        color: 'white',
+        fontSize: 24,
+        marginTop: 15,
+    },
+
+    small_centred_text: {
+        color: 'white',
+        fontSize: 18,
+        marginTop: 10
+    },
+
+    button: {
+        marginTop: 140,
+        width: 300,
     }
 });
 
