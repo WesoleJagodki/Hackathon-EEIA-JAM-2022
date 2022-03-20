@@ -139,6 +139,13 @@ export const settings_styles = StyleSheet.create({
     logout: {
       marginTop: 320,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 40,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
@@ -552,6 +559,41 @@ export const weather_styles = StyleSheet.create({
     top: {
         marginLeft: 30
     }
+});
+
+
+export const time_styles = StyleSheet.create({
+    heading: {
+        color: 'white',
+        fontSize: 36,
+        alignSelf: 'center',
+        paddingTop: 90,
+    },
+
+    auto: {
+        width: 24,
+        height: 24,
+    },
+
+    auto_btn: {
+        width: 70,
+        height: 70,
+        backgroundColor: 'white',
+        borderRadius: 24
+    },
+
+    text: {
+        color: 'white',
+        padding: 20,
+        fontSize: 24,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 73,
+        right: 2,
+    },
 });
 
 export const health_styles = StyleSheet.create({

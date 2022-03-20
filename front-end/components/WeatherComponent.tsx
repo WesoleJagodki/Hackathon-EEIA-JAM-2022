@@ -24,7 +24,7 @@ function Weather({ temperature, humidity, conditions, wind }: WeatherInfo) {
                     <Text style={weather_styles.header} fontWeight={"bold"}> {conditions.slice(0,1).toUpperCase()+conditions.slice(1)} </Text>
                     <HStack space={3} style={weather_styles.top}>
                         <Text style={weather_styles.header}> {temperature}°C </Text>
-                        <Image style={weather_styles.conditions} source={require('../image/chmurka.png')}></Image>
+                        <Image style={weather_styles.conditions} source={require('../image/chmurka.png')} alt={'temperature'}></Image>
                     </HStack>
                     <HStack space={3}>
                         <Image style={weather_styles.img} source={require('../image/wind.png')} alt="wind" />

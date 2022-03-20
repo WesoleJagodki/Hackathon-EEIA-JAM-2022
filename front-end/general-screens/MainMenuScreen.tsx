@@ -15,20 +15,20 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}>
                     <HStack style={main_menu.topContainer}>
                         <View onTouchStart={() => navigation.navigate('SettingsScreen')}>
-                            <Image style={main_menu.gear} source={require("../image/cog.png")} />
+                            <Image style={main_menu.gear} source={require("../image/cog.png")} alt={"cog"}/>
                         </View>
                         <View onTouchStart={() => navigation.navigate('AchivementsScreen')}>
-                            <Image style={main_menu.gear} source={require("../image/badge.png")} />
+                            <Image style={main_menu.gear} source={require("../image/badge.png")} alt={"badge"}/>
                         </View>
                         <View>
                             <Text style={main_menu.logotext}>Slava Viak</Text>
-                            <Image style={main_menu.logo} source={require("../image/loginpicture.png")} />
+                            <Image style={main_menu.logo} source={require("../image/loginpicture.png")} alt={"slava-viak"}/>
                         </View>
                     </HStack>
                     <View style={main_menu.midContainer}>
                         <HStack>
                             <Text style={main_menu.hello}>Hello</Text>
-                            <Image style={main_menu.hand} source={require("../image/Hand.png")} />
+                            <Image style={main_menu.hand} source={require("../image/Hand.png")} alt={"hand"}/>
                         </HStack>
 
                         <Text style={main_menu.smallHello}>We are very happy for you to be with us, have a nice day!</Text>
@@ -59,23 +59,23 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                         </Center>
                         <ScrollView horizontal={true}>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/strawberryicecream.png")} />
+                                <Image style={main_menu.food} source={require("../image/strawberryicecream.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Strawberry Cream</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/matcha.png")} />
+                                <Image style={main_menu.food} source={require("../image/matcha.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Matcha Ice</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/milkyicecream.png")} />
+                                <Image style={main_menu.food} source={require("../image/milkyicecream.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Milky Day</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/tropical.png")} />
+                                <Image style={main_menu.food} source={require("../image/tropical.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Tropical</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/watermelon.png")} />
+                                <Image style={main_menu.food} source={require("../image/watermelon.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Watermelon</Text>
                             </Box>
                         </ScrollView>
@@ -87,23 +87,23 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                         </Center>
                         <ScrollView horizontal={true}>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/light.png")} />
+                                <Image style={main_menu.food} source={require("../image/light.png")} alt={"smart-home"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Manage Light</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/cat2.png")} />
+                                <Image style={main_menu.food} source={require("../image/cat2.png")} alt={"smart-home"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Feed Cat</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/catdrin.png")} />
+                                <Image style={main_menu.food} source={require("../image/catdrin.png")} alt={"smart-home"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Cat Drink</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/thermo.png")} />
+                                <Image style={main_menu.food} source={require("../image/thermo.png")} alt={"smart-home"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Temperature</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/camera.png")} />
+                                <Image style={main_menu.food} source={require("../image/camera.png")} alt={"smart-home"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Camera</Text>
                             </Box>
                         </ScrollView>
@@ -145,7 +145,9 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                         <Center>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Plan your free time</Text>
-                                <Text style={main_menu.seeAll}>See all</Text>
+                                <View onTouchStart={() => navigation.navigate('PlanFreeTime')}>
+                                    <Text style={main_menu.seeAll}>See all</Text>
+                                </View>
                             </HStack>
                             <Box style={main_menu.basicBox}>
                                 <Box style={main_menu.basicBoxWhite}>
