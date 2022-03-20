@@ -356,6 +356,7 @@ export const main_menu = StyleSheet.create({
         textShadowColor: 'rgba(0,0,0,0.5)',
         textShadowOffset: {height: 3, width: 0},
         textShadowRadius: 5,
+        marginLeft: 35,
     },
     smallHello: {
         fontSize: 12,
@@ -363,9 +364,10 @@ export const main_menu = StyleSheet.create({
         textShadowColor: 'rgba(0,0,0,0.5)',
         textShadowOffset: {height: 3, width: 0},
         textShadowRadius: 5,
-
+        marginLeft: 35,
     },
     categories: {
+        marginTop: 5,
         color: 'white',
         fontSize: 22,
         fontWeight: 'bold',
@@ -392,9 +394,9 @@ export const main_menu = StyleSheet.create({
     },
     midContainer: {
         marginTop: 10,
-        marginLeft: 35,
     },
     basicBox: {
+        width: 330,
         borderRadius: 20,
         backgroundColor: 'rgba(255,255,255,0.2)',
         marginTop: 10,
@@ -402,7 +404,6 @@ export const main_menu = StyleSheet.create({
         padding: 10,
         paddingLeft: 15,
         paddingRight: 15,
-        marginRight: 35,
     },
     basicBoxWhite: {
         borderRadius: 20,
@@ -436,10 +437,10 @@ export const main_menu = StyleSheet.create({
         height: 72,
     },
     flexContainer: {
+        marginTop: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: 320,
-        marginRight: 35,
     },
     flexContainerInside: {
         flexDirection: 'row',
@@ -471,4 +472,16 @@ export const main_menu = StyleSheet.create({
         fontSize: 12,
         marginTop: 3,
     },
+    hand: {
+        marginTop: -3,
+        marginLeft: 5,
+    },
+    button: {
+        width: 140,
+        height: 40,
+    },
+    text: {
+        color: 'white',
+        fontSize: 18,
+    }
 });
