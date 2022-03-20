@@ -20,7 +20,10 @@ export const SettingsScreen = function ({navigation} : any): JSX.Element {
                             <ImageButton text="Preferences" onClick={() => {navigation.navigate('PreferencesScreen')}}/>
                             <ImageButton text="Password & Security" onClick={() => {navigation.navigate('SecurityScreen')}}/>
                             <ImageButton text="Help & FAQ" onClick={() => {navigation.navigate('HelpScreen')}}/>
-                            <ImageButton text="Info" onClick={() => {navigation.navigate('HelpScreen')}}/>
+                            <ImageButton text="Information" onClick={() => {navigation.navigate('InformationScreen')}}/>
+                            <View style={settings_styles.logout}>
+                                <ImageButton text="Log out" onClick={() => {navigation.navigate('LoginScreen')}}/>
+                            </View>
                         </VStack>
                     </Center>
                 </LinearGradient>

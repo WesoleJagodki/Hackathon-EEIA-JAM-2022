@@ -12,6 +12,7 @@ import { SecurityScreen } from "../general-screens/SecurityScreen";
 import { MainScreen } from "../general-screens/MainScreen";
 import { PreferencesScreen } from "../general-screens/PreferencesScreen";
 import { AchivementsScreen } from "../general-screens/AchivementsScreen";
+import { InformationScreen } from "../general-screens/InformationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="SecurityScreen" component={SecurityScreen} options={{ title: 'Security' }} />
             <Stack.Screen name="HelpScreen" component={HelpScreen} options={{ title: 'Help' }} />
             <Stack.Screen name="AchivementsScreen" component={AchivementsScreen} options={{ title: 'Achivements' }} />
+            <Stack.Screen name="InformationScreen" component={InformationScreen} options={{ title: 'Information' }} />
         </Stack.Navigator>
     );
 }

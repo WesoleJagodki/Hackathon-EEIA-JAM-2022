@@ -136,6 +136,9 @@ export const settings_styles = StyleSheet.create({
         fontSize: 36,
         color: 'white',
     },
+    logout: {
+      marginTop: 320,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
@@ -263,4 +266,55 @@ export const login_login_screen = StyleSheet.create({
         color: 'lightgray',
         fontWeight: "bold",
     },
-})
+});
+
+export const information_screen = StyleSheet.create({
+   header: {
+       color: 'white',
+       fontSize: 36,
+       textAlign: "center",
+       marginTop: 70,
+       marginBottom: 20,
+   },
+    text: {
+        marginTop: 33,
+        width: 310,
+        color: 'white',
+        fontSize: 13,
+        textAlign: "justify",
+    },
+    list: {
+        color: 'white',
+        fontSize: 13,
+        marginTop: 5,
+        width: 310,
+        textAlign: "justify",
+    },
+    header2: {
+        color: 'white',
+        fontSize: 22,
+        width: 310,
+        textAlign: "justify",
+        marginTop: 87,
+    },
+    image1: {
+        width: 200,
+        height: 200,
+    },
+    image2: {
+        width: 190,
+        height: 100,
+        marginTop: 50,
+    },
+    image3: {
+        width: 200,
+        height: 75,
+        marginTop: 20,
+    },
+    button: {
+        marginTop: 40,
+        marginBottom: 50,
+        width: 230,
+        height: 40,
+    },
+});
