@@ -15,6 +15,7 @@ import { AchivementsScreen } from "../general-screens/AchivementsScreen";
 import { InformationScreen } from "../general-screens/InformationScreen";
 import { AccountScreen } from "../general-screens/AccountScreen";
 import { FoodScreen } from "../general-screens/FoodScreen";
+import { ForumScreen } from "../general-screens/ForumScreen";
 import { PlanFreeTime } from "../general-screens/PlanFreeTime";
 import { HealthScreen } from "../general-screens/HealthScreen";
 import { PsychiatristsScreen } from "../general-screens/PsychiatristsScreen";
@@ -38,6 +39,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="InformationScreen" component={InformationScreen} options={{ title: 'Information' }} />
             <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
             <Stack.Screen name="FoodScreen" component={FoodScreen} options={{ title: 'Food' }} />
+            <Stack.Screen name="ForumScreen" component={ForumScreen} options={{ title: 'Forum' }} />
             <Stack.Screen name="HealthScreen" component={HealthScreen} options={{ title: 'Health' }} />
             <Stack.Screen name="PsychiatristsScreen" component={PsychiatristsScreen} options={{ title: 'Psychiatrists' }} />
             <Stack.Screen name="PsychologistsScreen" component={PsychologistsScreen} options={{ title: 'Psychologists' }} />

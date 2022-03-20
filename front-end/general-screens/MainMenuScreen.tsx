@@ -1,12 +1,16 @@
+import React, {View, Image, ScrollView} from "react-native";
+import {Text, NativeBaseProvider, HStack, Center, Box, Button, Divider} from "native-base";
 import React, { View, Image, ScrollView } from "react-native";
 import { Text, NativeBaseProvider, HStack, Center, Box, Button, Divider } from "native-base";
 
-import { WeatherComponent } from "../components/WeatherComponent";
+import {WeatherComponent} from "../components/WeatherComponent";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles, main_menu } from "./GeneralStyle";
 
 
+
+export const MainMenuScreen = function ({navigation}: any): JSX.Element {
 export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
     return (
         <NativeBaseProvider>
@@ -31,18 +35,36 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             <Image style={main_menu.hand} source={require("../image/Hand.png")} alt={"hand"}/>
                         </HStack>
 
-                        <Text style={main_menu.smallHello}>We are very happy for you to be with us, have a nice day!</Text>
+                        <Text style={main_menu.smallHello}>We are very happy for you to be with us, have a nice
+                            day!</Text>
                         <Center>
                             <Box style={main_menu.basicBox}>
                                 <WeatherComponent />
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Forum</Text>
+                                <View onTouchStart={() => navigation.navigate('ForumScreen')}>
+                                    <Text style={main_menu.seeAll}>See all</Text>
+                                </View>
                                 <Text style={main_menu.seeAll}>See all</Text>
                             </HStack>
                             <Box style={main_menu.basicBox}>
 
                                 <HStack marginBottom={2} style={main_menu.flexContainerInside}>
+                                    <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Special April
+                                        Event</Text>
+                                        <Text style={main_menu.readMore}>Read more</Text>
+                                </HStack>
+                                <Text style={main_menu.basicText} fontSize={12} textAlign={"justify"}>Wyjątkowa okazja
+                                    wzięcia udziału w niezapomnianej imprezie w elitarnym towarzystwie. Nie może cię tam
+                                    zabraknąć
+                                    A unique opportunity to take part in an unforgettable party in an elite company. You
+                                    cannot miss it!</Text>
+                            </Box>
+                            <HStack style={main_menu.flexContainer}>
+                                <Text style={main_menu.categories}>Order food</Text>
+                                <Text style={main_menu.seeAll} onPress={() => navigation.navigate('FoodScreen')}>See
+                                    all</Text>
                                     <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Special April Event</Text>
                                     <Text style={main_menu.readMore}>Read more</Text>
                                 </HStack>
@@ -54,11 +76,13 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                                 <View onTouchStart={() => navigation.navigate('FoodScreen')}>
                                     <Text style={main_menu.seeAll}>See all</Text>
                                 </View>
-
                             </HStack>
                         </Center>
                         <ScrollView horizontal={true}>
                             <Box style={main_menu.SmallBox}>
+                                <Image style={main_menu.food} source={require("../image/strawberryicecream.png")}/>
+                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Strawberry
+                                    Cream</Text>
                                 <Image style={main_menu.food} source={require("../image/strawberryicecream.png")} alt={"order-food"}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Strawberry Cream</Text>
                             </Box>
@@ -117,12 +141,14 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             <Box style={main_menu.basicBox}>
                                 <Center>
                                     <HStack marginBottom={2} style={main_menu.flexContainerInside}>
-                                        <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Today, 19 March!</Text>
+                                        <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Today, 19
+                                            March!</Text>
                                         <Text style={main_menu.readMore}>Read more</Text>
                                     </HStack>
                                 </Center>
                                 <Text style={main_menu.basicText} fontSize={12}>Reminder of upcoming visit!</Text>
-                                <Text style={main_menu.basicText} fontWeight={'bold'} fontSize={12}>Doctor: psychologist</Text>
+                                <Text style={main_menu.basicText} fontWeight={'bold'} fontSize={12}>Doctor:
+                                    psychologist</Text>
                             </Box>
                         </Center>
                         <ScrollView horizontal={true}>
@@ -156,6 +182,13 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                                         <Text color={'#c45e32'} fontSize={24} fontWeight={'bold'}>$24</Text>
                                     </HStack>
                                 </Box>
+                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Internet
+                                    City - Business Tower</Text>
+                                <Divider/>
+                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Mall
+                                    of the Emirates Metro</Text>
+                                <Center><Button style={main_menu.button} colorScheme="fuchsia"><Text
+                                    style={main_menu.text}>Find someone</Text></Button></Center>
                                 <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Internet City - Business Tower</Text>
                                 <Divider />
                                 <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Mall of the Emirates Metro</Text>
