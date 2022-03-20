@@ -570,9 +570,17 @@ export const time_styles = StyleSheet.create({
 
     text: {
         color: 'white',
-        margin: 20,
-        fontSize: 24
-    }
+        padding: 20,
+        fontSize: 24,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 73,
+        right: 2,
+    },
+});
 
 export const health_styles = StyleSheet.create({
     hello: {

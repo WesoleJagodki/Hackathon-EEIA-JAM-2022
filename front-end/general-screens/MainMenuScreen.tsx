@@ -145,7 +145,9 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                         <Center>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Plan your free time</Text>
-                                <Text style={main_menu.seeAll}>See all</Text>
+                                <View onTouchStart={() => navigation.navigate('PlanFreeTime')}>
+                                    <Text style={main_menu.seeAll}>See all</Text>
+                                </View>
                             </HStack>
                             <Box style={main_menu.basicBox}>
                                 <Box style={main_menu.basicBoxWhite}>

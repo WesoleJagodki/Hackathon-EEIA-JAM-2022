@@ -2,7 +2,7 @@ import React, { View } from "react-native";
 import { Text, NativeBaseProvider, VStack, Center, HStack, Button, Image, Checkbox, Box, Divider } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import {g_styles, time_styles, Help_FAQ, main_menu, login_screen} from "./GeneralStyle";
+import {g_styles, time_styles, Help_FAQ, main_menu, login_screen, health_styles} from "./GeneralStyle";
 
 export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
     return (
@@ -14,7 +14,7 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                                <Image style={main_menu.arrowback} source={require("../image/ArrowBack.png")}/>
+                                <Image style={time_styles.arrowback} source={require("../image/ArrowBack.png")}/>
                             </View>
                             <Text style={time_styles.heading}> Plan your free time </Text>
                         </HStack>
@@ -22,10 +22,10 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                     <Text style={time_styles.text}> Select a car </Text>
                     <Center>
                         <HStack space={5}>
-                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto.png')} /> </Button>
-                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_2.png')} /> </Button>
-                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_3.png')} /> </Button>
-                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_4.png')} /> </Button>
+                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto.png')} alt={'car'}/> </Button>
+                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_2.png')} alt={'car'}/> </Button>
+                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_3.png')} alt={'car'}/> </Button>
+                            <Button style={time_styles.auto_btn}> <Image style={time_styles.auto} source={require('../image/auto_4.png')} alt={'car'}/> </Button>
                         </HStack>
                     </Center>
 
@@ -41,7 +41,7 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                         </HStack>
                     </VStack>
                     <Center>
-                        <Button style={Help_FAQ.botton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Prepare the plan!</Text></Button>
+                        <Button style={Help_FAQ.botton} colorScheme="fuchsia"><Text style={login_screen.text}>Prepare the plan!</Text></Button>
                     </Center>
 
                     <Center>

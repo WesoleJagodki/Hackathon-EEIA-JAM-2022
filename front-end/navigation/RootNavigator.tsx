@@ -23,7 +23,7 @@ const Stack = createNativeStackNavigator();
 export const RootNavigator = function RootNavigator() : JSX.Element {
     return (
         <Stack.Navigator screenOptions={{headerShown: false}}>
-            <Stack.Screen name="Root" component={PlanFreeTime} options={{ title: 'Welcome' }}/>
+            <Stack.Screen name="Root" component={LoadingScreen} options={{ title: 'Welcome' }}/>
             <Stack.Screen name="LoginLoginScreen" component={LoginLoginScreen} options={{ title: 'LoginLogin' }} />
             <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ title: 'Login' }} />
             <Stack.Screen name="RegistrationScreen" component={RegistrationScreen} options={{ title: 'Register' }} />
@@ -37,6 +37,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
             <Stack.Screen name="FoodScreen" component={FoodScreen} options={{ title: 'Food' }} />
             <Stack.Screen name="HealthScreen" component={HealthScreen} options={{ title: 'Health' }} />
+            <Stack.Screen name="PlanFreeTime" component={PlanFreeTime} options={{ title: 'PlanFreeTime' }} />
         </Stack.Navigator>
     );
 }
