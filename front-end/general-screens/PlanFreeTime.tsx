@@ -2,7 +2,7 @@ import React, { View } from "react-native";
 import { Text, NativeBaseProvider, VStack, Center, HStack, Button, Image, Checkbox, Box, Divider } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import { g_styles, time_styles, Help_FAQ, main_menu } from "./GeneralStyle";
+import {g_styles, time_styles, Help_FAQ, main_menu, login_screen} from "./GeneralStyle";
 
 export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
     return (
@@ -12,7 +12,12 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}>
                     <Center>
-                        <Text style={time_styles.heading}> Plan your free time </Text>
+                        <HStack>
+                            <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
+                                <Image style={main_menu.arrowback} source={require("../image/ArrowBack.png")}/>
+                            </View>
+                            <Text style={time_styles.heading}> Plan your free time </Text>
+                        </HStack>
                     </Center>
                     <Text style={time_styles.text}> Select a car </Text>
                     <Center>
@@ -36,7 +41,7 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                         </HStack>
                     </VStack>
                     <Center>
-                        <Button style={Help_FAQ.botton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={time_styles.text}>Prepare a plan!</Text></Button>
+                        <Button style={Help_FAQ.botton} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Prepare the plan!</Text></Button>
                     </Center>
 
                     <Center>
