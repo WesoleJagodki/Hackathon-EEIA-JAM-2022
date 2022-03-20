@@ -500,3 +500,35 @@ export const main_menu = StyleSheet.create({
         left: 100,
     },
 });
+
+export const weather_styles = StyleSheet.create({
+    header: {
+        color: 'white',
+        fontSize: 24,
+        alignSelf: 'center'
+    },
+
+    img: {
+        position: "relative",
+        top: 10,
+        width: 30,
+        height: 20,
+    },
+
+    background: {
+        backgroundColor: '#5a4d79',
+        borderColor: '#5a4d79',
+        borderRadius: 12,
+        borderWidth: 4,
+        width: 300
+    },
+
+    conditions: {
+        width: 80,
+        height: 50,
+    },
+
+    top: {
+        marginLeft: 30
+    }
+});

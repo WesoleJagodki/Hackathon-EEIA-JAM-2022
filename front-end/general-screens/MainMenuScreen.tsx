@@ -1,6 +1,8 @@
 import React, {View, Image, ScrollView} from "react-native";
 import {Text, NativeBaseProvider, HStack, Center, Box, Button, Divider } from "native-base";
 
+import { WeatherComponent } from "../components/WeatherComponent";
+
 import {LinearGradient} from 'expo-linear-gradient';
 import {g_styles, main_menu} from "./GeneralStyle";
 
@@ -32,8 +34,7 @@ export const MainMenuScreen = function ({navigation} : any): JSX.Element {
                         <Text style={main_menu.smallHello}>We are very happy for you to be with us, have a nice day!</Text>
                         <Center>
                             <Box style={main_menu.basicBox}>
-                                <Text style={main_menu.basicText} textAlign={'center'} fontSize={12.5}>Today, 19 March</Text>
-                                <Text style={main_menu.basicText} textAlign={'center'} fontSize={17} fontWeight={'bold'}>Cloudy</Text>
+                                <WeatherComponent/>
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                               <Text style={main_menu.categories}>Forum</Text>
