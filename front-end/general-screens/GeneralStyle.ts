@@ -278,12 +278,14 @@ export const account_screen = StyleSheet.create({
 
     centred_text: {
         color: 'white',
-        fontSize: 24
+        fontSize: 24,
+        marginTop: 10,
     },
 
     small_centred_text: {
         color: 'white',
-        fontSize: 18
+        fontSize: 18,
+        marginTop: 10
     },
 
     button: {
