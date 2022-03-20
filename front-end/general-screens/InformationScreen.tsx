@@ -27,10 +27,11 @@ export const InformationScreen = function ({navigation} : any): JSX.Element {
                             In order to be able to deliver Wesołe Jagódki products, we need to process information about you. The types of information collected depend on how you use our Products.
                         </Text>
                         <Text style={information_screen.header2}>Partners</Text>
-                        <Image style={information_screen.image3} source={require("../image/htd.png")}/>
-                        <Image style={information_screen.image2} source={require("../image/WRS.png")}/>
-                        <Image style={information_screen.image1} source={require("../image/dotnet.png")}/>
-                        <Image style={information_screen.image1} source={require("../image/armors.png")}/>
+                        <Image style={information_screen.image3} source={require("../image/htd.png")} alt={"sponsor"}/>
+                        <Image style={information_screen.image2} source={require("../image/red-bull-logo.png")} alt={"sponsor"}/>
+                        <Image style={information_screen.image2} source={require("../image/WRS.png")} alt={"sponsor"}/>
+                        <Image style={information_screen.image1} source={require("../image/dotnet.png")} alt={"sponsor"}/>
+                        <Image style={information_screen.image1} source={require("../image/armors.png")} alt={"sponsor"}/>
                         <Button style={information_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>
                     </Center>
                 </LinearGradient>
