@@ -9,6 +9,7 @@ import { SettingsScreen } from "../general-screens/SettingsScreen";
 import { SecurityScreen } from "../general-screens/SecurityScreen";
 import {MainScreen} from "../general-screens/MainScreen";
 import {PreferencesScreen} from "../general-screens/PreferencesScreen";
+import {MainMenuScreen} from "../general-screens/MainMenuScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
             <Stack.Screen name="SecurityScreen" component={SecurityScreen} options={{ title: 'Security' }} />
             <Stack.Screen name="HelpScreen" component={HelpScreen} options={{ title: 'Help' }} />
+            <Stack.Screen name="MainMenuScreen" component={MainMenuScreen} options={{ title: 'MainMenu' }} />
         </Stack.Navigator>
     );
 }
