@@ -126,10 +126,10 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             </Box>
                         </Center>
                         <ScrollView horizontal={true}>
-                            <Box style={main_menu.SmallBoxSmall}>
+                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate('PsychologistsScreen')}>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychologist</Text>
                             </Box>
-                            <Box style={main_menu.SmallBoxSmall}>
+                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate('PsychiatristsScreen')}>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychiatrist</Text>
                             </Box>
                             <Box style={main_menu.SmallBoxSmall}>

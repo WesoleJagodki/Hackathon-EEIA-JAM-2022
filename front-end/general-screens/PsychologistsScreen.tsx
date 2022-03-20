@@ -1,4 +1,4 @@
-import React, {View, Image} from "react-native";
+import React, {ScrollView, View, Image} from "react-native";
 import {Text, NativeBaseProvider, HStack, Center, VStack} from "native-base";
 
 import {LinearGradient} from 'expo-linear-gradient';
@@ -7,10 +7,9 @@ import {g_styles, settings_styles, health_styles, main_menu} from "./GeneralStyl
 export const PsychologistsScreen = function ({navigation}: any): JSX.Element {
     return (
         <NativeBaseProvider>
-            <View style={g_styles.container_app}>
+            <ScrollView style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}
-                    style={g_styles.background}>
+                    colors={['rgba(22,6,81,100)', 'transparent']}>
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
@@ -19,7 +18,10 @@ export const PsychologistsScreen = function ({navigation}: any): JSX.Element {
                             <Text style={settings_styles.heading}>Psychologist</Text>
                         </HStack>
                     </Center>
-                    <Text margin={12} style={main_menu.basicText}>Top doctors</Text>
+                    <HStack>
+                        <Text margin={12} style={main_menu.basicText} fontWeight={"bold"}>Top doctors</Text>
+                        <Text style={main_menu.seeAll1}>See all</Text>
+                    </HStack>
                     <HStack style={health_styles.container}>
                         <View>
                             <Image style={health_styles.doctor} source={require("../image/image37.png")}  alt={"Psychiatrists"}/>
@@ -77,7 +79,7 @@ export const PsychologistsScreen = function ({navigation}: any): JSX.Element {
                         </VStack>
                     </HStack>
                 </LinearGradient>
-            </View>
+            </ScrollView>
         </NativeBaseProvider>
     )
 }
