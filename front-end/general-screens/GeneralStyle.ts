@@ -499,6 +499,20 @@ export const main_menu = StyleSheet.create({
         marginTop: 5,
         left: 100,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "relative",
+        marginTop: 73,
+        marginRight: 70,
+    },
+    shop: {
+        width: 24,
+        height: 24,
+        position: "relative",
+        marginTop: 80,
+        marginLeft: 70,
+    },
 });
 
 export const weather_styles = StyleSheet.create({
@@ -533,6 +547,7 @@ export const weather_styles = StyleSheet.create({
     }
 });
 
+
 export const time_styles = StyleSheet.create({
     heading: {
         color: 'white',
@@ -558,4 +573,39 @@ export const time_styles = StyleSheet.create({
         margin: 20,
         fontSize: 24
     }
+
+export const health_styles = StyleSheet.create({
+    hello: {
+        color: '#9A16A3',
+        fontSize: 24,
+        marginLeft: 10,
+        paddingTop: 29,
+    },
+    gentle_ask: {
+        color: 'white',
+        fontSize: 18,
+        marginLeft: 10,
+        marginBottom: 27,
+    },
+    info: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+        backgroundColor: 'rgba(255,255,255,0.2)',
+        marginBottom: 15,
+        marginRight: 10,
+        padding: 10,
+        width: 128,
+        height: 72,
+    },
+    box: {
+      marginBottom: 300,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 40,
+    },
 });
