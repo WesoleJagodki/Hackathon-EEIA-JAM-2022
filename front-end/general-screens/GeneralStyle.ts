@@ -493,7 +493,8 @@ export const main_menu = StyleSheet.create({
         marginTop: -10,
     },
     logotext: {
-         color: 'white',
+        position: "relative",
+        color: 'white',
         fontSize: 18,
         marginTop: 5,
         left: 100,
