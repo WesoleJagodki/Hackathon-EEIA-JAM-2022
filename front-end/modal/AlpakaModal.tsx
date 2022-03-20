@@ -9,11 +9,11 @@ interface Props {
 }
 
 export const AlpakaModal = function ({showModal, popupData, setShowModal} : Props): JSX.Element {
-    return(
+    return (
             <Modal isOpen={showModal}>
                 <Modal.Content maxWidth="400px" style={alpaka_modal.modal}>
                     <Center>
-                        <Image style={alpaka_modal.image} source={popupData.img} alt={popupData.title}></Image>
+                        <Image style={alpaka_modal.image} source={'/static/media/suprised_alpaca.8684b708.png'} alt={popupData.title}></Image>
                         <Modal.Body>
                             <Text style={alpaka_modal.header}>{popupData.title}</Text>
                             <Text style={alpaka_modal.text}>{popupData.description}</Text>

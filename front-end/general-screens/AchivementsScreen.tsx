@@ -40,12 +40,8 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
             <View key={Math.random()} onTouchEnd={onAlpacaClick}>
                 <Image
                     style={achivements_styles.alpaca_mini}
-                    source={require(`../image/a4.png`)}
-                    alt={alpaca.name}
-                    key={alpaca.name}
                     source={alpaca.img}
                     alt="Alpaca"
-                    key={Math.random()}
                 />
             </View>
         )
