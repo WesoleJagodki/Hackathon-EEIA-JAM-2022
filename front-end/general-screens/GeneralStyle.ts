@@ -384,7 +384,7 @@ export const main_menu = StyleSheet.create({
         margin: 5,
     },
     food:{
-        margin: 8,
+        margin: 5,
         height: 96,
         width: 96,
     },
@@ -423,7 +423,7 @@ export const main_menu = StyleSheet.create({
         marginBottom: 15,
         marginRight: 10,
         padding: 10,
-        height:176,
+        height:180,
         width: 128,
     },
     SmallBoxSmall:{
