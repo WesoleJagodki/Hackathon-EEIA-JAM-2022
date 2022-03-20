@@ -29,7 +29,7 @@ export const LoginLoginScreen = function ({ navigation } : any) {
   const onSubmit = () => {
     setErrors({});
     validate()
-      ? navigation.navigate("SettingsScreen")
+      ? navigation.navigate("MainMenuScreen")
       : console.log("Validation Failed");
   };
 

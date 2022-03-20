@@ -1,9 +1,8 @@
 import React, { View } from "react-native";
-import { useState } from "react";
-import { Text, NativeBaseProvider, Image, VStack, HStack, Modal, Button, Center } from "native-base";
+import { Text, NativeBaseProvider, Image, VStack, Button, Center } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import { g_styles, settings_styles, account_screen, preferences_screen, login_screen, achivements_styles } from "./GeneralStyle";
+import { g_styles, settings_styles, account_screen, preferences_screen, login_screen } from "./GeneralStyle";
 
 export const AccountScreen = function ({ navigation }: any): JSX.Element {
     return (
@@ -31,8 +30,8 @@ export const AccountScreen = function ({ navigation }: any): JSX.Element {
                                 <Text style={preferences_screen.label}>Birth date</Text>
                                 <Text style={preferences_screen.selection}>24-04-1999</Text>
                             </View>
-                            <Button style={account_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>
                         </VStack>
+                        <Button style={account_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>
                     </Center>
                 </LinearGradient>
             </View>

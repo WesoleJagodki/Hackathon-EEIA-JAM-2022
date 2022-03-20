@@ -333,18 +333,19 @@ export const account_screen = StyleSheet.create({
     centred_text: {
         color: 'white',
         fontSize: 24,
-        marginTop: 15,
+        paddingTop: 15,
     },
 
     small_centred_text: {
         color: 'white',
         fontSize: 18,
-        marginTop: 10
+        paddingTop: 10
     },
 
     button: {
-        marginTop: 140,
-        width: 300,
+        marginTop: 230,
+        width: 230,
+        height: 40,
     }
 });
 

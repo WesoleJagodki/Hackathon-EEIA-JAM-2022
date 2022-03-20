@@ -5,15 +5,19 @@ import {LinearGradient} from 'expo-linear-gradient';
 import {g_styles, main_menu} from "./GeneralStyle";
 
 
-export const MainMenuScreen = function (): JSX.Element {
+export const MainMenuScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
                 <LinearGradient
                     colors={['rgba(22,6,81,100)', 'transparent']}>
                     <HStack style={main_menu.topContainer}>
-                        <Image style={main_menu.gear} source={require("../image/cog.png")}/>
-                        <Image style={main_menu.gear} source={require("../image/badge.png")}/>
+                        <View onTouchStart={() => navigation.navigate('SettingsScreen')}>
+                            <Image style={main_menu.gear} source={require("../image/cog.png")}/>
+                        </View>
+                        <View onTouchStart={() => navigation.navigate('AchivementsScreen')}>
+                            <Image style={main_menu.gear} source={require("../image/badge.png")}/>
+                        </View>
                     </HStack>
                     <View style={main_menu.midContainer}>
                         <Text style={main_menu.hello}>Hello!</Text>
@@ -137,7 +141,7 @@ export const MainMenuScreen = function (): JSX.Element {
                             <Box style={main_menu.basicBoxWhite}>
                                 <HStack style={main_menu.flexContainerInsideDollar}>
                                     <Text fontSize={14} marginTop={2}>6 Mar, 2022</Text>
-                                    <Text color={'#c45e32'} fontSize={24} fontWeight={'extraBlack'}>$24</Text>
+                                    <Text color={'#c45e32'} fontSize={24} fontWeight={'extrabold'}>$24</Text>
                                 </HStack>
                             </Box>
                             <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'extrabold'}>Internet City - Business Tower</Text>

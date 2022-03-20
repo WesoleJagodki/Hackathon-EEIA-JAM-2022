@@ -1,9 +1,9 @@
 import React, { View } from "react-native";
 import { useState } from "react";
-import { Text, NativeBaseProvider, Image, VStack, HStack, Modal, Button, Center } from "native-base";
+import { Text, NativeBaseProvider, Image, VStack, HStack, Button, Center } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
-import {g_styles, settings_styles, achivements_styles, preferences_screen, login_screen} from "./GeneralStyle";
+import {g_styles, settings_styles, achivements_styles, login_screen} from "./GeneralStyle";
 import {AlpakaModal} from "../modal/AlpakaModal";
 
 const ALPACAS = [
@@ -75,7 +75,7 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                                 }
                             </HStack>
                         </VStack>
-                        <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Congratulations!</Text></Button>
+                        <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate('MainMenuScreen')}><Text style={login_screen.text}>Congratulations!</Text></Button>
                         <AlpakaModal popupData={popupData} setShowModal={setShowModal} showModal={showModal}/>
                     </Center>
                 </LinearGradient>
