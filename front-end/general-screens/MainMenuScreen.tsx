@@ -51,7 +51,10 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Order food</Text>
-                                <Text style={main_menu.seeAll} onPress={() => navigation.navigate('FoodScreen')}>See all</Text>
+                                <View onTouchStart={() => navigation.navigate('FoodScreen')}>
+                                    <Text style={main_menu.seeAll}>See all</Text>
+                                </View>
+
                             </HStack>
                         </Center>
                         <ScrollView horizontal={true}>

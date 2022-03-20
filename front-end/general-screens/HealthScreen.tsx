@@ -1,5 +1,5 @@
-import React, { View } from "react-native";
-import { Text, NativeBaseProvider, VStack, HStack, Center, Input, ScrollView, Box } from "native-base";
+import React, { View, ScrollView } from "react-native";
+import { Text, NativeBaseProvider, HStack, Center, Input, Box } from "native-base";
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { g_styles, settings_styles, health_styles, main_menu } from "./GeneralStyle";
@@ -12,12 +12,19 @@ export const HealthScreen = function ({ navigation }: any): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}
                     style={g_styles.background}>
                     <Center>
-                        <Text style={settings_styles.heading}>Health Care</Text>
+                        <HStack>
+                            <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
+                                <Image style={main_menu.arrowback} source={require("../image/ArrowBack.png")}/>
+                            </View>
+
+                            <Text style={settings_styles.heading}>Health Care</Text>
+                        </HStack>
+
                     </Center>
                     <Text style={health_styles.hello}>Hello.</Text>
                     <Text style={health_styles.gentle_ask}>How can we help you today?</Text>
                     <Input placeholder="Search" variant="filled" borderRadius="10" py="1" px="2" borderWidth="0" margin="10px"/>
-                    <ScrollView horizontal={true} margin="10px">
+                    <ScrollView horizontal={true}>
                         <Box style={health_styles.info}>
                             <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychologist</Text>
                         </Box>
@@ -35,20 +42,23 @@ export const HealthScreen = function ({ navigation }: any): JSX.Element {
                         </Box>
                     </ScrollView>
                     <Center>
-                        <HStack style={main_menu.flexContainer}>
-                            <Text style={main_menu.categories}>Upcoming visits</Text>
-                            <Text style={main_menu.seeAll}>See all</Text>
-                        </HStack>
-                        <Box style={main_menu.basicBox}>
-                            <Center>
-                                <HStack marginBottom={2} style={main_menu.flexContainerInside}>
-                                    <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Today, 19 March!</Text>
-                                    <Text style={main_menu.readMore}>Read more</Text>
-                                </HStack>
-                            </Center>
-                            <Text style={main_menu.basicText} fontSize={12}>Reminder of upcoming visit!</Text>
-                            <Text style={main_menu.basicText} fontWeight={'bold'} fontSize={12}>Doctor: psychologist</Text>
-                        </Box>
+                        <View style={health_styles.box}>
+                            <HStack style={main_menu.flexContainer}>
+                                <Text style={main_menu.categories}>Upcoming visits</Text>
+                                <Text style={main_menu.seeAll}>See all</Text>
+                            </HStack>
+                            <Box style={main_menu.basicBox}>
+                                <Center>
+                                    <HStack marginBottom={2} style={main_menu.flexContainerInside}>
+                                        <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Today, 19 March!</Text>
+                                        <Text style={main_menu.readMore}>Read more</Text>
+                                    </HStack>
+                                </Center>
+                                <Text style={main_menu.basicText} fontSize={12}>Reminder of upcoming visit!</Text>
+                                <Text style={main_menu.basicText} fontWeight={'bold'} fontSize={12}>Doctor: psychologist</Text>
+                            </Box>
+                        </View>
+
                     </Center>
                 </LinearGradient>
             </View>

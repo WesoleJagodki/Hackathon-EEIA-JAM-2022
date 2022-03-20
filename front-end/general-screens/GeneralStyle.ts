@@ -499,6 +499,20 @@ export const main_menu = StyleSheet.create({
         marginTop: 5,
         left: 100,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "relative",
+        marginTop: 73,
+        marginRight: 70,
+    },
+    shop: {
+        width: 24,
+        height: 24,
+        position: "relative",
+        marginTop: 80,
+        marginLeft: 70,
+    },
 });
 
 export const weather_styles = StyleSheet.create({
@@ -533,21 +547,19 @@ export const weather_styles = StyleSheet.create({
     }
 });
 
-
 export const health_styles = StyleSheet.create({
     hello: {
         color: '#9A16A3',
         fontSize: 24,
         marginLeft: 10,
-        paddingTop: 5
+        paddingTop: 29,
     },
-
     gentle_ask: {
         color: 'white',
         fontSize: 18,
-        marginLeft: 10
+        marginLeft: 10,
+        marginBottom: 27,
     },
-
     info: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -558,5 +570,8 @@ export const health_styles = StyleSheet.create({
         padding: 10,
         width: 128,
         height: 72,
-    }
+    },
+    box: {
+      marginBottom: 300,
+    },
 });
