@@ -357,6 +357,7 @@ export const main_menu = StyleSheet.create({
         textShadowOffset: {height: 3, width: 0},
         textShadowRadius: 5,
         marginLeft: 35,
+        marginTop: 10,
     },
     smallHello: {
         fontSize: 12,
@@ -473,7 +474,7 @@ export const main_menu = StyleSheet.create({
         marginTop: 3,
     },
     hand: {
-        marginTop: -3,
+        marginTop: 7,
         marginLeft: 5,
     },
     button: {
@@ -483,5 +484,18 @@ export const main_menu = StyleSheet.create({
     text: {
         color: 'white',
         fontSize: 18,
-    }
+    },
+    logo: {
+        position: "absolute",
+        left: 200,
+        width: 70,
+        height: 70,
+        marginTop: -10,
+    },
+    logotext: {
+         color: 'white',
+        fontSize: 18,
+        marginTop: 5,
+        left: 100,
+    },
 });

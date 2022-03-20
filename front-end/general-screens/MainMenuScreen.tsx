@@ -2,7 +2,7 @@ import React, {View, Image, ScrollView} from "react-native";
 import {Text, NativeBaseProvider, HStack, Center, Box, Button, Divider } from "native-base";
 
 import {LinearGradient} from 'expo-linear-gradient';
-import {g_styles, login_screen, main_menu} from "./GeneralStyle";
+import {g_styles, main_menu} from "./GeneralStyle";
 
 
 export const MainMenuScreen = function ({navigation} : any): JSX.Element {
@@ -17,6 +17,10 @@ export const MainMenuScreen = function ({navigation} : any): JSX.Element {
                         </View>
                         <View onTouchStart={() => navigation.navigate('AchivementsScreen')}>
                             <Image style={main_menu.gear} source={require("../image/badge.png")}/>
+                        </View>
+                        <View>
+                            <Text style={main_menu.logotext}>Slava Viak</Text>
+                            <Image style={main_menu.logo} source={require("../image/loginpicture.png")}/>
                         </View>
                     </HStack>
                     <View style={main_menu.midContainer}>
