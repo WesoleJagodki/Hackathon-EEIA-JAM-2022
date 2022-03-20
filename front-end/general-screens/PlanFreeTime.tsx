@@ -14,7 +14,7 @@ export const PlanFreeTime = function ({ navigation }: any): JSX.Element {
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                                <Image style={time_styles.arrowback} source={require("../image/ArrowBack.png")}/>
+                                <Image style={time_styles.arrowback} source={require("../image/ArrowBack.png")} alt={'arrowback'}/>
                             </View>
                             <Text style={time_styles.heading}> Plan your free time </Text>
                         </HStack>

@@ -14,7 +14,7 @@ export const HealthScreen = function ({ navigation }: any): JSX.Element {
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                                <Image style={health_styles .arrowback} source={require("../image/ArrowBack.png")}/>
+                                <Image style={health_styles .arrowback} source={require("../image/ArrowBack.png")} alt={"arrowback"}/>
                             </View>
 
                             <Text style={settings_styles.heading}>Health Care</Text>

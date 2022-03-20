@@ -16,7 +16,7 @@ export const SettingsScreen = function ({navigation} : any): JSX.Element {
                     <Center>
                         <HStack>
                             <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                                <Image style={settings_styles.arrowback} source={require("../image/ArrowBack.png")}/>
+                                <Image style={settings_styles.arrowback} source={require("../image/ArrowBack.png")} alt={'arrowback'}/>
                             </View>
                             <Text style={settings_styles.heading}> Settings </Text>
                         </HStack>

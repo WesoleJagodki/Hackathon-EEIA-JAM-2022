@@ -18,10 +18,12 @@ export const LoginScreen = function ({navigation} : any): JSX.Element {
                         <Image
                             style={login_screen.logo1}
                             source={require('../image/city.png')}
+                            alt={'city'}
                         />
                         <Image
                             style={login_screen.logo2}
                             source={require('../image/FANCITY.png')}
+                            alt={'FANCITY'}
                         />
                         <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
                         <View style={login_screen.horizontal}>
