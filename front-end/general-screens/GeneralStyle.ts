@@ -62,6 +62,11 @@ export const login_screen = StyleSheet.create({
         height: 40,
         marginRight: 20,
     },
+    button2: {
+        width: 140,
+        height: 40,
+        marginLeft: 20,
+    },
     text: {
         fontSize: 18,
         color: 'white',
@@ -131,6 +136,9 @@ export const settings_styles = StyleSheet.create({
         fontSize: 36,
         color: 'white',
     },
+    logout: {
+      marginTop: 320,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
@@ -141,6 +149,8 @@ export const preferences_screen = StyleSheet.create({
     selection: {
         fontSize: 22,
         color: 'white',
+        borderBottomWidth: 1,
+        borderBottomColor: "white",
     },
     option: {
         flexDirection: 'row',
@@ -220,37 +230,26 @@ export const registration_screen = StyleSheet.create({
 
 export const achivements_styles = StyleSheet.create({
     alpaca_img: {
-        height: 250,
-        width: 250,
-        alignSelf: 'center'
+        height: 300,
+        width: 300,
     },
-
     centred_text: {
-        alignSelf: 'center',
-        fontSize: 34,
-        color: 'white'
+        fontSize: 30,
+        color: 'white',
+       paddingTop: 10,
     },
-
     mini_alpacas: {
-        alignSelf: 'center',
-        marginTop: 15
+        marginTop: 15,
     },
-
     alpaca_mini: {
         height: 100,
-        width: 100
+        width: 100,
     },
-
-    footer: {
-        marginTop: 25,
-        color: 'white',
-        fontSize: 24,
-        alignSelf: 'center',
-        borderWidth: 4,
-        borderRadius: 12,
-        backgroundColor: '#9A16A3',
-        borderColor: '#9A16A3'
-    }
+    button: {
+        marginTop: 45,
+        width: 230,
+        height: 40,
+    },
 });
 
 
@@ -262,5 +261,60 @@ export const login_login_screen = StyleSheet.create({
     recovery : {
         alignSelf: 'flex-end',
         marginTop: 20,
-    }
-})
+    },
+    login: {
+        color: 'lightgray',
+        fontWeight: "bold",
+    },
+});
+
+export const information_screen = StyleSheet.create({
+   header: {
+       color: 'white',
+       fontSize: 36,
+       textAlign: "center",
+       marginTop: 70,
+       marginBottom: 20,
+   },
+    text: {
+        marginTop: 33,
+        width: 310,
+        color: 'white',
+        fontSize: 13,
+        textAlign: "justify",
+    },
+    list: {
+        color: 'white',
+        fontSize: 13,
+        marginTop: 5,
+        width: 310,
+        textAlign: "justify",
+    },
+    header2: {
+        color: 'white',
+        fontSize: 22,
+        width: 310,
+        textAlign: "justify",
+        marginTop: 87,
+    },
+    image1: {
+        width: 200,
+        height: 200,
+    },
+    image2: {
+        width: 190,
+        height: 100,
+        marginTop: 50,
+    },
+    image3: {
+        width: 200,
+        height: 75,
+        marginTop: 20,
+    },
+    button: {
+        marginTop: 40,
+        marginBottom: 50,
+        width: 230,
+        height: 40,
+    },
+});

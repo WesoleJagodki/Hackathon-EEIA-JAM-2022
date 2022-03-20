@@ -11,7 +11,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { login } from "../api/user"
 
-export const LoginLoginScreen = function ({ navigation }) {
+export const LoginLoginScreen = function ({ navigation } : any) {
   const [formData, setData] = useState({});
   const [errors, setErrors] = useState({});
 
@@ -67,7 +67,7 @@ export const LoginLoginScreen = function ({ navigation }) {
                 }
               />
               <View onTouchStart={() => navigation.navigate("LoginScreen")} style={login_login_screen.recovery}>
-                <Text>Recovery Password</Text>
+                <Text style={[registration_screen.policy,login_login_screen.login]}>Recovery Password</Text>
               </View>
 
               <Button

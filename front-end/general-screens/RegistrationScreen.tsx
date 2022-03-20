@@ -15,7 +15,7 @@ async function register(data, navigator) {
 }
 
 
-export const RegistrationScreen = function ({navigation}) {
+export const RegistrationScreen = function ({navigation} : any) {
   const [formData, setData] = useState({});
   const [errors, setErrors] = useState({});
 
