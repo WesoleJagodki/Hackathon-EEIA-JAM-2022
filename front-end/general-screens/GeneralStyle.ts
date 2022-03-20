@@ -139,6 +139,13 @@ export const settings_styles = StyleSheet.create({
     logout: {
       marginTop: 320,
     },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 40,
+    },
 });
 
 export const preferences_screen = StyleSheet.create({
@@ -384,7 +391,7 @@ export const main_menu = StyleSheet.create({
         margin: 5,
     },
     food:{
-        margin: 8,
+        margin: 5,
         height: 96,
         width: 96,
     },
@@ -428,7 +435,7 @@ export const main_menu = StyleSheet.create({
         marginBottom: 15,
         marginRight: 10,
         padding: 10,
-        height:176,
+        height:180,
         width: 128,
     },
     SmallBoxSmall:{
@@ -473,6 +480,13 @@ export const main_menu = StyleSheet.create({
         position: 'relative',
         marginTop: 4,
     },
+    seeAll1: {
+        color: '#9A16A3',
+        fontSize: 18,
+        position: 'absolute',
+        left: 300,
+        marginTop: 48,
+    },
     readMore: {
         color: '#9A16A3',
         fontSize: 12,
@@ -503,6 +517,20 @@ export const main_menu = StyleSheet.create({
         fontSize: 18,
         marginTop: 5,
         left: 100,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "relative",
+        marginTop: 73,
+        marginRight: 70,
+    },
+    shop: {
+        width: 24,
+        height: 24,
+        position: "relative",
+        marginTop: 80,
+        marginLeft: 70,
     },
 });
 
@@ -554,5 +582,91 @@ export const Forum_styles = StyleSheet.create({
     text:{
         color:'white',
         marginLeft: 10,
+    },
+});
+
+export const time_styles = StyleSheet.create({
+    heading: {
+        color: 'white',
+        fontSize: 36,
+        alignSelf: 'center',
+        paddingTop: 90,
+    },
+
+    auto: {
+        width: 24,
+        height: 24,
+    },
+
+    auto_btn: {
+        width: 70,
+        height: 70,
+        backgroundColor: 'white',
+        borderRadius: 24
+    },
+
+    text: {
+        color: 'white',
+        padding: 20,
+        fontSize: 24,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 73,
+        right: 2,
+    },
+});
+
+export const health_styles = StyleSheet.create({
+    hello: {
+        color: '#9A16A3',
+        fontSize: 24,
+        marginLeft: 10,
+        paddingTop: 29,
+    },
+    gentle_ask: {
+        color: 'white',
+        fontSize: 18,
+        marginLeft: 10,
+        marginBottom: 27,
+    },
+    info: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+        backgroundColor: 'rgba(255,255,255,0.2)',
+        marginBottom: 15,
+        marginRight: 10,
+        padding: 10,
+        width: 128,
+        height: 72,
+    },
+    box: {
+      marginBottom: 300,
+    },
+    arrowback: {
+        width: 24,
+        height: 35,
+        position: "absolute",
+        marginTop: 65,
+        right: 25,
+    },
+    container:{
+        marginLeft: 25,
+        marginRight: 25,
+        marginBottom: 30,
+    },
+    doctor:{
+        borderRadius: 15,
+        height: 129,
+        width: 129,
+        marginLeft: 15,
+        marginRight: 15,
+    },
+    star:{
+        height: 20,
+        width: 20,
     },
 });
