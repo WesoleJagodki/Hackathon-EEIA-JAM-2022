@@ -67,7 +67,7 @@ export const MainMenuScreen = function ({navigation} : any): JSX.Element {
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Milky Day</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
-                                <Image style={main_menu.food} source={require("../image/watermelon.png")}/>
+                                <Image style={main_menu.food} source={require("../image/tropical.png")}/>
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Tropical</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
