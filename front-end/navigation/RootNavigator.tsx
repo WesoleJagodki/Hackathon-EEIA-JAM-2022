@@ -9,6 +9,7 @@ import { RegistrationScreen } from '../general-screens/RegistrationScreen';
 import { HelpScreen } from "../general-screens/HelpScreen";
 import { SettingsScreen } from "../general-screens/SettingsScreen";
 import { SecurityScreen } from "../general-screens/SecurityScreen";
+import { MainMenuScreen } from "../general-screens/MainMenuScreen";
 import { MainScreen } from "../general-screens/MainScreen";
 import { PreferencesScreen } from "../general-screens/PreferencesScreen";
 import { AchivementsScreen } from "../general-screens/AchivementsScreen";
@@ -29,6 +30,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
             <Stack.Screen name="SecurityScreen" component={SecurityScreen} options={{ title: 'Security' }} />
             <Stack.Screen name="HelpScreen" component={HelpScreen} options={{ title: 'Help' }} />
+            <Stack.Screen name="MainMenuScreen" component={MainMenuScreen} options={{ title: 'MainMenu' }} />
             <Stack.Screen name="AchivementsScreen" component={AchivementsScreen} options={{ title: 'Achivements' }} />
             <Stack.Screen name="InformationScreen" component={InformationScreen} options={{ title: 'Information' }} />
             <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
