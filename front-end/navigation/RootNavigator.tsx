@@ -15,6 +15,7 @@ import { AchivementsScreen } from "../general-screens/AchivementsScreen";
 import { InformationScreen } from "../general-screens/InformationScreen";
 import { AccountScreen } from "../general-screens/AccountScreen";
 import { FoodScreen } from "../general-screens/FoodScreen";
+import { ForumScreen } from "../general-screens/ForumScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -34,6 +35,7 @@ export const RootNavigator = function RootNavigator() : JSX.Element {
             <Stack.Screen name="InformationScreen" component={InformationScreen} options={{ title: 'Information' }} />
             <Stack.Screen name="AccountScreen" component={AccountScreen} options={{ title: 'Account' }} />
             <Stack.Screen name="FoodScreen" component={FoodScreen} options={{ title: 'Food' }} />
+            <Stack.Screen name="ForumScreen" component={ForumScreen} options={{ title: 'Forum' }} />
         </Stack.Navigator>
     );
 }

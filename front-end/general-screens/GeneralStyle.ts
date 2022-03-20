@@ -393,6 +393,11 @@ export const main_menu = StyleSheet.create({
         marginLeft: 25,
         marginRight: 17.5,
     },
+    topContainer2: {
+        marginTop: 35,
+        marginLeft: 25,
+        marginRight: 17.5,
+    },
     midContainer: {
         marginTop: 10,
     },
@@ -531,4 +536,23 @@ export const weather_styles = StyleSheet.create({
     top: {
         marginLeft: 30
     }
+});
+
+export const Forum_styles = StyleSheet.create({
+    container:{
+        height:70,
+        marginTop: 35,
+        margin: 10,
+        marginRight: 10,
+    },
+    photo:{
+        marginRight:10,
+        marginTop:10,
+        width:60,
+        height:60,
+    },
+    text:{
+        color:'white',
+        marginLeft: 10,
+    },
 });
