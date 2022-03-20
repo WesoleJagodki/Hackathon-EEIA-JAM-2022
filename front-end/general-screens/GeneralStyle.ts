@@ -475,6 +475,13 @@ export const main_menu = StyleSheet.create({
         position: 'relative',
         marginTop: 4,
     },
+    seeAll1: {
+        color: '#9A16A3',
+        fontSize: 18,
+        position: 'absolute',
+        left: 300,
+        marginTop: 48,
+    },
     readMore: {
         color: '#9A16A3',
         fontSize: 12,
@@ -621,6 +628,22 @@ export const health_styles = StyleSheet.create({
         height: 35,
         position: "absolute",
         marginTop: 65,
-        right: 40,
+        right: 25,
+    },
+    container:{
+        marginLeft: 25,
+        marginRight: 25,
+        marginBottom: 30,
+    },
+    doctor:{
+        borderRadius: 15,
+        height: 129,
+        width: 129,
+        marginLeft: 15,
+        marginRight: 15,
+    },
+    star:{
+        height: 20,
+        width: 20,
     },
 });
