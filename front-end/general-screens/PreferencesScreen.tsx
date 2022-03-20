@@ -13,6 +13,11 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
 
     const genders = ['Men', 'Women', 'Both', 'Neutral', 'None'];
 
+    function select_gender(gender: string) {
+        setGender(gender);
+        onClose();
+    }
+
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
@@ -30,7 +35,7 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
                                         {
                                             genders.map((gender, key) => {
                                                 return (
-                                                    <Actionsheet.Item key={key} onPress={() => setGender(gender)}>
+                                                    <Actionsheet.Item key={key} onPress={() => select_gender(gender)}>
                                                         {gender}
                                                     </Actionsheet.Item>
                                                 )
