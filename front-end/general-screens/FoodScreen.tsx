@@ -1,18 +1,24 @@
-import React, { Image, ScrollView} from "react-native";
+import React, { Image, ScrollView, View} from "react-native";
 import {Text, NativeBaseProvider, HStack, Center, Box} from "native-base";
 
 import {LinearGradient} from 'expo-linear-gradient';
 import {g_styles, main_menu, settings_styles} from "./GeneralStyle";
 
-
-export const FoodScreen = function (): JSX.Element {
+export const FoodScreen = function ({navigation} : any): JSX.Element {
     return (
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
                 <LinearGradient
                     colors={['rgba(22,6,81,100)', 'transparent']}>
                     <Center>
-                        <Text style={settings_styles.title}>Order food</Text>
+                        <HStack>
+                            <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
+                                <Image style={main_menu.arrowback} source={require("../image/ArrowBack.png")}/>
+                            </View>
+
+                            <Text style={settings_styles.title}>Order food</Text>
+                            <Image style={main_menu.shop} source={require("../image/shopping-cart.png")}/>
+                        </HStack>
                         <Text style={main_menu.basicText}>What do you want today?</Text>
                         <HStack style={main_menu.flexContainer}>
                             <Text style={main_menu.categories}>Ice Cream</Text>
