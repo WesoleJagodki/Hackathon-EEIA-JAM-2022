@@ -17,10 +17,13 @@ class UserApiView(APIView):
         try:
             user = UserRegisterSerializer().load(data=request.data)
         except Exception as e:
+            from rich import inspect
+
+            inspect(e)
             return Response(status=status.HTTP_400_BAD_REQUEST, data=str(e))
 
         try:
-            UserModel.objects.create_user(**attr.asdict(user), username=user.email)
+            UserModel.objects.create_user(**attr.asdict(user))
         except IntegrityError:
             return Response(
                 status=status.HTTP_400_BAD_REQUEST,

@@ -9,6 +9,7 @@ import {
 } from "./GeneralStyle";
 
 import { LinearGradient } from "expo-linear-gradient";
+import { login } from "../api/user"
 
 export const LoginLoginScreen = function ({ navigation }) {
   const [formData, setData] = useState({});
@@ -28,10 +29,13 @@ export const LoginLoginScreen = function ({ navigation }) {
   };
   const onSubmit = () => {
     setErrors({});
-    validate()
-      ? navigation.navigate("LoginScreen")
-      : console.log("Validation Failed");
-  };
+    if (validate()) {
+        login(formData.email, formData.password).then(() =>
+        navigation.navigate("MainScreen")
+    )
+    };
+
+    }
 
   return (
     <View style={[g_styles.container_app]}>
