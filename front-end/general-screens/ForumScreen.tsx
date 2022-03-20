@@ -14,14 +14,14 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                     colors={['rgba(22,6,81,100)', 'transparent']}>
                     <View style={main_menu.topContainer2}>
                         <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
-                            <Image style={main_menu.gear} source={require("../image/Stroke-2.png")}/>
+                            <Image style={main_menu.gear} source={require("../image/Stroke-2.png")} alt={"forum"}/>
                         </View>
                         <View>
                             <Text style={main_menu.logotext}>Slava Viak</Text>
-                            <Image style={main_menu.logo} source={require("../image/loginpicture.png")}/>
+                            <Image style={main_menu.logo} source={require("../image/loginpicture.png")} alt={"forum"}/>
                         </View>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/16photo1.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/16photo1.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>Birthday Party</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>I would like to invite you to my birthday party</Text>
@@ -33,7 +33,7 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                             </View>
                         </HStack>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/image17.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/image17.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>Looking for a dog</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>I like chihuachua</Text>
@@ -45,7 +45,7 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                             </View>
                         </HStack>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/image18.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/image18.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>What's up?</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>#pushinp</Text>
@@ -57,7 +57,7 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                             </View>
                         </HStack>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/image19.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/image19.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>Crypto: any tips?</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>Average crypto fan</Text>
@@ -69,7 +69,7 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                             </View>
                         </HStack>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/image20.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/image20.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>Kitty NFT's</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>Join our class!</Text>
@@ -81,7 +81,7 @@ export const ForumScreen = function ({navigation}: any): JSX.Element {
                             </View>
                         </HStack>
                         <HStack style={Forum_styles.container}>
-                            <View><Image style={Forum_styles.photo} source={require("../image/image21.png")}/></View>
+                            <View><Image style={Forum_styles.photo} source={require("../image/image21.png")} alt={"forum"}/></View>
                             <View>
                                 <Text fontSize={22} style={Forum_styles.text}>Papaja</Text>
                                 <Text fontSize={12} style={Forum_styles.text}>Essasito</Text>

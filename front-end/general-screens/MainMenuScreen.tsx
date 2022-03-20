@@ -39,14 +39,16 @@ export const MainMenuScreen = function ({navigation}: any): JSX.Element {
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Forum</Text>
-                                <Text style={main_menu.seeAll}>See all</Text>
+                                <View onTouchStart={() => navigation.navigate('ForumScreen')}>
+                                    <Text style={main_menu.seeAll}>See all</Text>
+                                </View>
                             </HStack>
                             <Box style={main_menu.basicBox}>
 
                                 <HStack marginBottom={2} style={main_menu.flexContainerInside}>
                                     <Text style={main_menu.basicText} fontSize={16} fontWeight={"bold"}>Special April
                                         Event</Text>
-                                    <Text style={main_menu.readMore}>Read more</Text>
+                                        <Text style={main_menu.readMore}>Read more</Text>
                                 </HStack>
                                 <Text style={main_menu.basicText} fontSize={12} textAlign={"justify"}>Wyjątkowa okazja
                                     wzięcia udziału w niezapomnianej imprezie w elitarnym towarzystwie. Nie może cię tam
