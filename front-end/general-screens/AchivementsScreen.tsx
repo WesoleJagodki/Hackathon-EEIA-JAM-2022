@@ -41,7 +41,7 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                 <Image
                     style={achivements_styles.alpaca_mini}
                     source={alpaca.img}
-                    alt="Alpaca"
+                    alt={"Alpaca"}
                 />
             </View>
         );
@@ -56,7 +56,7 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                 >
                     <Center>
                         <Text style={settings_styles.heading}>Achievements</Text>
-                        <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt="Alpaca"/>
+                        <Image style={achivements_styles.alpaca_img} source={require("../image/alpaca.png")} alt={"Alpaca"}/>
                         <Text style={achivements_styles.centred_text}>Fulfilled alpaca dreams</Text>
 
                         <VStack style={achivements_styles.mini_alpacas} space={5}>

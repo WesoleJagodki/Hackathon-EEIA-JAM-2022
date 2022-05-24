@@ -15,6 +15,7 @@ import { AchivementsScreen } from "../general-screens/AchivementsScreen";
 import { InformationScreen } from "../general-screens/InformationScreen";
 import { AccountScreen } from "../general-screens/AccountScreen";
 import { FoodScreen } from "../general-screens/FoodScreen";
+import { ForumScreen } from "../general-screens/ForumScreen";
 import { PlanFreeTime } from "../general-screens/PlanFreeTime";
 import { HealthScreen } from "../general-screens/HealthScreen";
 import { PsychiatristsScreen } from "../general-screens/PsychiatristsScreen";
