@@ -566,24 +566,6 @@ export const weather_styles = StyleSheet.create({
     }
 });
 
-export const Forum_styles = StyleSheet.create({
-    container:{
-        height:70,
-        marginTop: 35,
-        margin: 10,
-        marginRight: 10,
-    },
-    photo:{
-        marginRight:10,
-        marginTop:10,
-        width:60,
-        height:60,
-    },
-    text:{
-        color:'white',
-        marginLeft: 10,
-    },
-});
 
 export const time_styles = StyleSheet.create({
     heading: {
