@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Text, Image, View, HStack } from 'native-base';
+import * as React from "react";
+import { Text, Image, View, HStack } from "native-base";
 
-import { button_style } from './ButtonStyle';
+import { button_style } from "./ButtonStyle";
 
 interface ImageButtonProps {
     text: string;
@@ -23,4 +23,4 @@ export const ImageButton = function ({ text, img, onClick }: ImageButtonProps): 
             </HStack>
         </View>
     );
-}
+};

@@ -1,17 +1,17 @@
 import React, { View } from "react-native";
 import {NativeBaseProvider, useDisclose, Center, VStack, Actionsheet, Text, Button} from "native-base";
-import {settings_styles, preferences_screen, security_screen, login_screen} from "./GeneralStyle";
+import {settings_styles, preferences_screen, login_screen} from "./GeneralStyle";
 
-import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from "expo-linear-gradient";
 import { g_styles } from "./GeneralStyle";
 import { useState } from "react";
 
 
 export const PreferencesScreen = function ({navigation} : any): JSX.Element {
     const { isOpen, onOpen, onClose } = useDisclose();
-    const [gender, setGender] = useState('Men');
+    const [gender, setGender] = useState("Men");
 
-    const genders = ['Men', 'Women', 'Both', 'Neutral', 'None'];
+    const genders = ["Men", "Women", "Both", "Neutral", "None"];
 
     function select_gender(gender: string) {
         setGender(gender);
@@ -22,7 +22,7 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}
+                    colors={["rgba(22,6,81,100)", "transparent"]}
                     style={g_styles.background}>
                     <Center>
                         <Text style={settings_styles.title}>Preferences</Text>
@@ -38,7 +38,7 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
                                                     <Actionsheet.Item key={key} onPress={() => select_gender(gender)}>
                                                         {gender}
                                                     </Actionsheet.Item>
-                                                )
+                                                );
                                             })
                                         }
                                     </Actionsheet.Content>
@@ -49,10 +49,10 @@ export const PreferencesScreen = function ({navigation} : any): JSX.Element {
                                 <Text style={preferences_screen.selection}>18-31</Text>
                             </View>
                         </VStack>
-                        <Button style={preferences_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate('SettingsScreen')}><Text style={login_screen.text}>Back to settings</Text></Button>
+                        <Button style={preferences_screen.button} colorScheme="fuchsia" onPress={() => navigation.navigate("SettingsScreen")}><Text style={login_screen.text}>Back to settings</Text></Button>
                     </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>
-    )
-}
+    );
+};

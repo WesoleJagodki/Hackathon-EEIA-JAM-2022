@@ -5,7 +5,7 @@ import { Text, NativeBaseProvider, HStack, Center, Box, Button, Divider } from "
 
 import {WeatherComponent} from "../components/WeatherComponent";
 
-import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from "expo-linear-gradient";
 import { g_styles, main_menu } from "./GeneralStyle";
 
 
@@ -16,12 +16,12 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}>
+                    colors={["rgba(22,6,81,100)", "transparent"]}>
                     <HStack style={main_menu.topContainer}>
-                        <View onTouchStart={() => navigation.navigate('SettingsScreen')}>
+                        <View onTouchStart={() => navigation.navigate("SettingsScreen")}>
                             <Image style={main_menu.gear} source={require("../image/cog.png")} alt={"cog"}/>
                         </View>
-                        <View onTouchStart={() => navigation.navigate('AchivementsScreen')}>
+                        <View onTouchStart={() => navigation.navigate("AchivementsScreen")}>
                             <Image style={main_menu.gear} source={require("../image/badge.png")} alt={"badge"}/>
                         </View>
                         <View>
@@ -43,10 +43,9 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Forum</Text>
-                                <View onTouchStart={() => navigation.navigate('ForumScreen')}>
+                                <View onTouchStart={() => navigation.navigate("ForumScreen")}>
                                     <Text style={main_menu.seeAll}>See all</Text>
                                 </View>
-                                <Text style={main_menu.seeAll}>See all</Text>
                             </HStack>
                             <Box style={main_menu.basicBox}>
 
@@ -73,7 +72,7 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                             </Box>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Order food</Text>
-                                <View onTouchStart={() => navigation.navigate('FoodScreen')}>
+                                <View onTouchStart={() => navigation.navigate("FoodScreen")}>
                                     <Text style={main_menu.seeAll}>See all</Text>
                                 </View>
                             </HStack>
@@ -84,23 +83,23 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                                 <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Strawberry
                                     Cream</Text>
                                 <Image style={main_menu.food} source={require("../image/strawberryicecream.png")} alt={"order-food"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Strawberry Cream</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Strawberry Cream</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/matcha.png")} alt={"order-food"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Matcha Ice</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Matcha Ice</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/milkyicecream.png")} alt={"order-food"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Milky Day</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Milky Day</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/tropical.png")} alt={"order-food"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Tropical</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Tropical</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/watermelon.png")} alt={"order-food"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Watermelon</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Watermelon</Text>
                             </Box>
                         </ScrollView>
                         <Center>
@@ -112,29 +111,29 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                         <ScrollView horizontal={true}>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/light.png")} alt={"smart-home"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Manage Light</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Manage Light</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/cat2.png")} alt={"smart-home"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Feed Cat</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Feed Cat</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/catdrin.png")} alt={"smart-home"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Cat Drink</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Cat Drink</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/thermo.png")} alt={"smart-home"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Temperature</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Temperature</Text>
                             </Box>
                             <Box style={main_menu.SmallBox}>
                                 <Image style={main_menu.food} source={require("../image/camera.png")} alt={"smart-home"}/>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Camera</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Camera</Text>
                             </Box>
                         </ScrollView>
                         <Center>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Health care</Text>
-                                <View onTouchStart={() => navigation.navigate('HealthScreen')}>
+                                <View onTouchStart={() => navigation.navigate("HealthScreen")}>
                                     <Text style={main_menu.seeAll}>See all</Text>
                                 </View>
                             </HStack>
@@ -147,31 +146,30 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                                     </HStack>
                                 </Center>
                                 <Text style={main_menu.basicText} fontSize={12}>Reminder of upcoming visit!</Text>
-                                <Text style={main_menu.basicText} fontWeight={'bold'} fontSize={12}>Doctor:
-                                    psychologist</Text>
+                                <Text style={main_menu.basicText} fontWeight={"bold"} fontSize={12}>Doctor: psychologist</Text>
                             </Box>
                         </Center>
                         <ScrollView horizontal={true}>
-                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate('PsychologistsScreen')}>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychologist</Text>
+                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate("PsychologistsScreen")}>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Psychologist</Text>
                             </Box>
-                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate('PsychiatristsScreen')}>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Psychiatrist</Text>
-                            </Box>
-                            <Box style={main_menu.SmallBoxSmall}>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Oncologist</Text>
+                            <Box style={main_menu.SmallBoxSmall} onTouchStart={() => navigation.navigate("PsychiatristsScreen")}>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Psychiatrist</Text>
                             </Box>
                             <Box style={main_menu.SmallBoxSmall}>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Neurologist</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Oncologist</Text>
                             </Box>
                             <Box style={main_menu.SmallBoxSmall}>
-                                <Text textAlign={'center'} fontSize={14} style={main_menu.basicText}>Gynecologist</Text>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Neurologist</Text>
+                            </Box>
+                            <Box style={main_menu.SmallBoxSmall}>
+                                <Text textAlign={"center"} fontSize={14} style={main_menu.basicText}>Gynecologist</Text>
                             </Box>
                         </ScrollView>
                         <Center>
                             <HStack style={main_menu.flexContainer}>
                                 <Text style={main_menu.categories}>Plan your free time</Text>
-                                <View onTouchStart={() => navigation.navigate('PlanFreeTime')}>
+                                <View onTouchStart={() => navigation.navigate("PlanFreeTime")}>
                                     <Text style={main_menu.seeAll}>See all</Text>
                                 </View>
                             </HStack>
@@ -179,19 +177,12 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                                 <Box style={main_menu.basicBoxWhite}>
                                     <HStack style={main_menu.flexContainerInsideDollar}>
                                         <Text fontSize={14} marginTop={2}>6 Mar, 2022</Text>
-                                        <Text color={'#c45e32'} fontSize={24} fontWeight={'bold'}>$24</Text>
+                                        <Text color={"#c45e32"} fontSize={24} fontWeight={"bold"}>$24</Text>
                                     </HStack>
                                 </Box>
-                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Internet
-                                    City - Business Tower</Text>
-                                <Divider/>
-                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Mall
-                                    of the Emirates Metro</Text>
-                                <Center><Button style={main_menu.button} colorScheme="fuchsia"><Text
-                                    style={main_menu.text}>Find someone</Text></Button></Center>
-                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Internet City - Business Tower</Text>
+                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={"bold"}>Internet City - Business Tower</Text>
                                 <Divider />
-                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={'bold'}>Mall of the Emirates Metro</Text>
+                                <Text style={main_menu.basicTextBlack} margin={5} fontSize={16} fontWeight={"bold"}>Mall of the Emirates Metro</Text>
                                 <Center><Button style={main_menu.button} colorScheme="fuchsia"><Text style={main_menu.text}>Find someone</Text></Button></Center>
                             </Box>
                         </Center>
@@ -199,5 +190,5 @@ export const MainMenuScreen = function ({ navigation }: any): JSX.Element {
                 </LinearGradient>
             </ScrollView>
         </NativeBaseProvider>
-    )
-}
+    );
+};

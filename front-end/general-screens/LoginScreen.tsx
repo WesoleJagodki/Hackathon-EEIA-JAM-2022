@@ -1,9 +1,9 @@
-import React, { Image, Text, View, Alert} from "react-native";
+import React, { Image, Text, View} from "react-native";
 import { login_screen } from "./GeneralStyle";
 
 import { NativeBaseProvider, Button, Center } from "native-base";
 
-import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from "expo-linear-gradient";
 import { g_styles } from "./GeneralStyle";
 
 export const LoginScreen = function ({navigation} : any): JSX.Element {
@@ -11,28 +11,28 @@ export const LoginScreen = function ({navigation} : any): JSX.Element {
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}
+                    colors={["rgba(22,6,81,100)", "transparent"]}
                     style={g_styles.background}
                 >
                     <Center>
                         <Image
                             style={login_screen.logo1}
-                            source={require('../image/city.png')}
-                            alt={'city'}
+                            source={require("../image/city.png")}
+                            alt={"city"}
                         />
                         <Image
                             style={login_screen.logo2}
-                            source={require('../image/FANCITY.png')}
-                            alt={'FANCITY'}
+                            source={require("../image/FANCITY.png")}
+                            alt={"FANCITY"}
                         />
                         <Text style={login_screen.h2}>closed, luxurious city in your pocket</Text>
                         <View style={login_screen.horizontal}>
-                            <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => navigation.navigate('RegistrationScreen')}><Text style={login_screen.text}>Sign in</Text></Button>
-                            <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => navigation.navigate('LoginLoginScreen')}><Text style={login_screen.text}>Log in</Text></Button>
+                            <Button style={login_screen.button1} colorScheme="fuchsia" onPress={() => navigation.navigate("RegistrationScreen")}><Text style={login_screen.text}>Sign in</Text></Button>
+                            <Button style={login_screen.button2} colorScheme="fuchsia" onPress={() => navigation.navigate("LoginLoginScreen")}><Text style={login_screen.text}>Log in</Text></Button>
                         </View>
                     </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>
     );
-}
+};
