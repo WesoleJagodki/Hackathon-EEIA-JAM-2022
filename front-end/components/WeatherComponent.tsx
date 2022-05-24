@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 import { useState, useEffect } from "react";
-import { Center, Text, View, Image, VStack, HStack } from 'native-base';
-import { weather_styles } from '../general-screens/GeneralStyle';
+import { Center, Text, View, Image, VStack, HStack } from "native-base";
+import { weather_styles } from "../general-screens/GeneralStyle";
 
 interface WeatherInfo {
     temperature: number
@@ -24,14 +24,14 @@ function Weather({ temperature, humidity, conditions, wind }: WeatherInfo) {
                     <Text style={weather_styles.header} fontWeight={"bold"}> {conditions.slice(0,1).toUpperCase()+conditions.slice(1)} </Text>
                     <HStack space={3} style={weather_styles.top}>
                         <Text style={weather_styles.header}> {temperature}°C </Text>
-                        <Image style={weather_styles.conditions} source={require('../image/chmurka.png')} alt={'temperature'}></Image>
+                        <Image style={weather_styles.conditions} source={require("../image/chmurka.png")} alt={"temperature"}></Image>
                     </HStack>
                     <HStack space={3}>
-                        <Image style={weather_styles.img} source={require('../image/wind.png')} alt="wind" />
+                        <Image style={weather_styles.img} source={require("../image/wind.png")} alt="wind" />
                         <Text style={weather_styles.header}> Wind | {Math.round(wind * 3.6)}km/h </Text>
                     </HStack>
                     <HStack space={3}>
-                        <Image style={weather_styles.img} source={require('../image/hum.png')} alt="hum" />
+                        <Image style={weather_styles.img} source={require("../image/hum.png")} alt="hum" />
                         <Text style={weather_styles.header}> Hum | {humidity}% </Text>
                     </HStack>
                 </VStack>
@@ -43,7 +43,7 @@ function Weather({ temperature, humidity, conditions, wind }: WeatherInfo) {
 const WEATHER_API_KEY = "650d3ff9343217c83124e2260bad673d";
 
 export const WeatherComponent = function (): JSX.Element {
-    const [weather, setWeather] = useState({ temp: 0.0, humidity: 0, conditions: '', wind: 0 });
+    const [weather, setWeather] = useState({ temp: 0.0, humidity: 0, conditions: "", wind: 0 });
 
     useEffect(() => {
         fetch(
@@ -52,10 +52,10 @@ export const WeatherComponent = function (): JSX.Element {
         ).then(json => {
             if (json.cod == 200) {
                 setWeather({
-                    temp: json['main']['temp'],
-                    humidity: json['main']['humidity'],
-                    conditions: json['weather'][0]['description'],
-                    wind: json['wind']['speed']
+                    temp: json["main"]["temp"],
+                    humidity: json["main"]["humidity"],
+                    conditions: json["weather"][0]["description"],
+                    wind: json["wind"]["speed"]
                 });
             }
         });
@@ -71,4 +71,4 @@ export const WeatherComponent = function (): JSX.Element {
             />
         </View>
     );
-}
+};

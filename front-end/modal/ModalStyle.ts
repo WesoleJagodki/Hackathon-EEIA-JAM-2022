@@ -25,11 +25,11 @@ export const alpaka_modal = StyleSheet.create({
         width: 372,
         height: 47.5,
         top: 152,
-        backgroundColor: 'transparent',
+        backgroundColor: "transparent",
         borderTopWidth: 1,
-        borderTopColor: '#C3C3C3',
+        borderTopColor: "#C3C3C3",
     },
     button_text: {
-      color: '#505050',
+        color: "#505050",
     },
 });

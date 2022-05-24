@@ -2,7 +2,7 @@ import React, { View,  Image } from "react-native";
 import { useState } from "react";
 import { Text, NativeBaseProvider, VStack, HStack, Button, Center } from "native-base";
 
-import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from "expo-linear-gradient";
 import {g_styles, settings_styles, achivements_styles, login_screen} from "./GeneralStyle";
 import { AlpakaModal } from "../modal/AlpakaModal";
 
@@ -44,14 +44,14 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                     alt="Alpaca"
                 />
             </View>
-        )
+        );
     }
 
     return (
         <NativeBaseProvider>
             <View style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}
+                    colors={["rgba(22,6,81,100)", "transparent"]}
                     style={g_styles.background}
                 >
                     <Center>
@@ -71,11 +71,11 @@ export const AchivementsScreen = function ({navigation} : any): JSX.Element {
                                 }
                             </HStack>
                         </VStack>
-                        <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate('MainMenuScreen')}><Text style={login_screen.text}>Congratulations!</Text></Button>
+                        <Button style={achivements_styles.button} colorScheme="fuchsia" onPress={() => navigation.navigate("MainMenuScreen")}><Text style={login_screen.text}>Congratulations!</Text></Button>
                         <AlpakaModal popupData={popupData} setShowModal={setShowModal} showModal={showModal}/>
                     </Center>
                 </LinearGradient>
             </View>
         </NativeBaseProvider>
-    )
-}
+    );
+};

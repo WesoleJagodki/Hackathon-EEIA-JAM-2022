@@ -2,19 +2,19 @@ import {StyleSheet} from "react-native";
 
 export const g_styles = StyleSheet.create({
     container_app: {
-        backgroundColor: 'rgba(71, 15, 138, 100)',
-        position: 'absolute',
+        backgroundColor: "rgba(71, 15, 138, 100)",
+        position: "absolute",
         left: 0,
         right: 0,
         top: 0,
-        height: '100%'
+        height: "100%"
     },
     background: {
-        position: 'absolute',
+        position: "absolute",
         left: 0,
         right: 0,
         top: 0,
-        height: '100%',
+        height: "100%",
     },
 });
 
@@ -53,29 +53,29 @@ export const login_screen = StyleSheet.create({
         fontSize: 20,
     },
     horizontal: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: "row",
+        justifyContent: "space-between",
         marginTop: 103,
     },
     button1: {
         width: 140,
-        height: 40,
+        height: 43,
         marginRight: 20,
     },
     button2: {
         width: 140,
-        height: 40,
+        height: 43,
         marginLeft: 20,
     },
     text: {
         fontSize: 18,
-        color: 'white',
+        color: "white",
     },
 });
 
 export const Help_FAQ = StyleSheet.create({
     mainText: {
-        color: 'white',
+        color: "white",
         fontSize: 36,
         textAlign: "center",
         marginTop: 70,
@@ -86,7 +86,7 @@ export const Help_FAQ = StyleSheet.create({
         marginTop: 10,
         marginBottom: 20,
         padding: 20,
-        backgroundColor: 'white',
+        backgroundColor: "white",
         alignItems: "center",
         justifyContent: "center",
         width: 250,
@@ -100,44 +100,44 @@ export const Help_FAQ = StyleSheet.create({
         marginTop: 20,
         marginBottom: 50,
         width: 230,
-        height: 40,
+        height: 43,
     }
 });
 
 export const Security_style = StyleSheet.create({
     mainText: {
-        color: 'white',
+        color: "white",
         fontSize: 36,
         textAlign: "center",
         marginTop: 70,
         marginBottom: 20,
     },
-})
+});
 
 export const settings_styles = StyleSheet.create({
     settings_list: {
         width: 300,
-        alignSelf: 'center',
+        alignSelf: "center",
         marginTop: 50,
         marginRight: 10,
     },
 
     heading: {
-        color: 'white',
+        color: "white",
         fontSize: 48,
-        alignSelf: 'center',
+        alignSelf: "center",
         paddingTop: 90,
     },
 
     title: {
-        textAlign: 'center',
+        textAlign: "center",
         paddingTop: 90,
         marginBottom: 20,
         fontSize: 36,
-        color: 'white',
+        color: "white",
     },
     logout: {
-      marginTop: 320,
+        marginTop: 320,
     },
     arrowback: {
         width: 24,
@@ -151,23 +151,23 @@ export const settings_styles = StyleSheet.create({
 export const preferences_screen = StyleSheet.create({
     label: {
         fontSize: 22,
-        color: 'white',
+        color: "white",
     },
     selection: {
         fontSize: 22,
-        color: 'white',
+        color: "white",
         borderBottomWidth: 1,
         borderBottomColor: "white",
     },
     option: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: "row",
+        justifyContent: "space-between",
         width: 300,
     },
     button: {
         marginTop: 475,
         width: 230,
-        height: 40,
+        height: 43,
     },
 });
 
@@ -189,13 +189,13 @@ export const security_screen = StyleSheet.create({
     menuButton: {
         marginTop: 400,
         width: 230,
-        height: 40,
+        height: 43,
     }
 });
 
 export const registration_screen = StyleSheet.create({
     title: {
-        color: 'white',
+        color: "white",
         fontSize: 34,
         paddingTop: 90,
     },
@@ -216,21 +216,21 @@ export const registration_screen = StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         width: 310,
-        color: 'black',
+        color: "black",
     },
     policy: {
-        color: 'white',
+        color: "white",
         fontSize: 13,
         marginLeft: 5,
     },
     button: {
         width: 140,
-        height: 40,
+        height: 43,
         marginTop: 39,
     },
     login: {
         marginLeft: 5,
-        color: '#FFA68B',
+        color: "#FFA68B",
         fontWeight: "bold",
     },
 });
@@ -242,8 +242,8 @@ export const achivements_styles = StyleSheet.create({
     },
     centred_text: {
         fontSize: 30,
-        color: 'white',
-       paddingTop: 10,
+        color: "white",
+        paddingTop: 10,
     },
     mini_alpacas: {
         marginTop: 15,
@@ -255,7 +255,7 @@ export const achivements_styles = StyleSheet.create({
     button: {
         marginTop: 45,
         width: 230,
-        height: 40,
+        height: 43,
     },
 });
 
@@ -265,39 +265,39 @@ export const login_login_screen = StyleSheet.create({
         width: 300,
     },
     recovery : {
-        alignSelf: 'flex-end',
+        alignSelf: "flex-end",
         marginTop: 20,
     },
     login: {
-        color: 'lightgray',
+        color: "lightgray",
         fontWeight: "bold",
     },
 });
 
 export const information_screen = StyleSheet.create({
-   header: {
-       color: 'white',
-       fontSize: 36,
-       textAlign: "center",
-       marginTop: 70,
-       marginBottom: 20,
-   },
+    header: {
+        color: "white",
+        fontSize: 36,
+        textAlign: "center",
+        marginTop: 70,
+        marginBottom: 20,
+    },
     text: {
         marginTop: 33,
         width: 310,
-        color: 'white',
+        color: "white",
         fontSize: 13,
         textAlign: "justify",
     },
     list: {
-        color: 'white',
+        color: "white",
         fontSize: 13,
         marginTop: 5,
         width: 310,
         textAlign: "justify",
     },
     header2: {
-        color: 'white',
+        color: "white",
         fontSize: 22,
         width: 310,
         textAlign: "justify",
@@ -321,7 +321,7 @@ export const information_screen = StyleSheet.create({
         marginTop: 40,
         marginBottom: 50,
         width: 230,
-        height: 40,
+        height: 43,
     },
 });
 
@@ -338,13 +338,13 @@ export const account_screen = StyleSheet.create({
     },
 
     centred_text: {
-        color: 'white',
+        color: "white",
         fontSize: 24,
         paddingTop: 15,
     },
 
     small_centred_text: {
-        color: 'white',
+        color: "white",
         fontSize: 18,
         paddingTop: 10
     },
@@ -352,15 +352,15 @@ export const account_screen = StyleSheet.create({
     button: {
         marginTop: 230,
         width: 230,
-        height: 40,
+        height: 43,
     }
 });
 
 export const main_menu = StyleSheet.create({
     hello: {
         fontSize: 22,
-        color: 'white',
-        textShadowColor: 'rgba(0,0,0,0.5)',
+        color: "white",
+        textShadowColor: "rgba(0,0,0,0.5)",
         textShadowOffset: {height: 3, width: 0},
         textShadowRadius: 5,
         marginLeft: 35,
@@ -368,17 +368,17 @@ export const main_menu = StyleSheet.create({
     },
     smallHello: {
         fontSize: 12,
-        color: 'white',
-        textShadowColor: 'rgba(0,0,0,0.5)',
+        color: "white",
+        textShadowColor: "rgba(0,0,0,0.5)",
         textShadowOffset: {height: 3, width: 0},
         textShadowRadius: 5,
         marginLeft: 35,
     },
     categories: {
         marginTop: 5,
-        color: 'white',
+        color: "white",
         fontSize: 22,
-        fontWeight: 'bold',
+        fontWeight: "bold",
     },
     gear: {
         width: 27.5,
@@ -400,13 +400,18 @@ export const main_menu = StyleSheet.create({
         marginLeft: 25,
         marginRight: 17.5,
     },
+    topContainer2: {
+        marginTop: 35,
+        marginLeft: 25,
+        marginRight: 17.5,
+    },
     midContainer: {
         marginTop: 10,
     },
     basicBox: {
         width: 330,
         borderRadius: 20,
-        backgroundColor: 'rgba(255,255,255,0.2)',
+        backgroundColor: "rgba(255,255,255,0.2)",
         marginTop: 10,
         marginBottom: 15,
         padding: 10,
@@ -415,7 +420,7 @@ export const main_menu = StyleSheet.create({
     },
     basicBoxWhite: {
         borderRadius: 20,
-        backgroundColor: 'white',
+        backgroundColor: "white",
         marginTop: 10,
         marginBottom: 15,
         padding: 10,
@@ -423,9 +428,9 @@ export const main_menu = StyleSheet.create({
         paddingRight: 15,
     },
     SmallBox:{
-        alignItems: 'center',
+        alignItems: "center",
         borderRadius: 20,
-        backgroundColor: 'rgba(255,255,255,0.2)',
+        backgroundColor: "rgba(255,255,255,0.2)",
         marginTop: 10,
         marginBottom: 15,
         marginRight: 10,
@@ -434,10 +439,10 @@ export const main_menu = StyleSheet.create({
         width: 128,
     },
     SmallBoxSmall:{
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignItems: "center",
+        justifyContent: "center",
         borderRadius: 20,
-        backgroundColor: 'rgba(255,255,255,0.2)',
+        backgroundColor: "rgba(255,255,255,0.2)",
         marginBottom: 15,
         marginRight: 10,
         padding: 10,
@@ -446,44 +451,44 @@ export const main_menu = StyleSheet.create({
     },
     flexContainer: {
         marginTop: 10,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: "row",
+        justifyContent: "space-between",
         width: 320,
     },
     flexContainerInside: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: "row",
+        justifyContent: "space-between",
         width: 300,
     },
     flexContainerInsideDollar: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: "row",
+        justifyContent: "space-between",
         width: 260,
     },
     basicText: {
-        color: 'white',
-        textShadowColor: 'rgba(0,0,0,0.5)',
+        color: "white",
+        textShadowColor: "rgba(0,0,0,0.5)",
         textShadowOffset: {height: 2, width: 0},
         textShadowRadius: 5,
     },
     basicTextBlack: {
-        color: '#19104E',
+        color: "#19104E",
     },
     seeAll: {
-        color: '#9A16A3',
+        color: "#9A16A3",
         fontSize: 18,
-        position: 'relative',
+        position: "relative",
         marginTop: 4,
     },
     seeAll1: {
-        color: '#9A16A3',
+        color: "#9A16A3",
         fontSize: 18,
-        position: 'absolute',
+        position: "absolute",
         left: 300,
         marginTop: 48,
     },
     readMore: {
-        color: '#9A16A3',
+        color: "#9A16A3",
         fontSize: 12,
         marginTop: 3,
     },
@@ -493,10 +498,10 @@ export const main_menu = StyleSheet.create({
     },
     button: {
         width: 140,
-        height: 40,
+        height: 43,
     },
     text: {
-        color: 'white',
+        color: "white",
         fontSize: 18,
     },
     logo: {
@@ -508,7 +513,7 @@ export const main_menu = StyleSheet.create({
     },
     logotext: {
         position: "relative",
-        color: 'white',
+        color: "white",
         fontSize: 18,
         marginTop: 5,
         left: 100,
@@ -531,9 +536,9 @@ export const main_menu = StyleSheet.create({
 
 export const weather_styles = StyleSheet.create({
     header: {
-        color: 'white',
+        color: "white",
         fontSize: 24,
-        alignSelf: 'center',
+        alignSelf: "center",
         paddingTop: 2,
     },
 
@@ -544,8 +549,8 @@ export const weather_styles = StyleSheet.create({
     },
 
     background: {
-        backgroundColor: '#5a4d79',
-        borderColor: '#5a4d79',
+        backgroundColor: "#5a4d79",
+        borderColor: "#5a4d79",
         borderRadius: 12,
         borderWidth: 4,
         width: 300
@@ -564,9 +569,9 @@ export const weather_styles = StyleSheet.create({
 
 export const time_styles = StyleSheet.create({
     heading: {
-        color: 'white',
+        color: "white",
         fontSize: 36,
-        alignSelf: 'center',
+        alignSelf: "center",
         paddingTop: 90,
     },
 
@@ -578,12 +583,12 @@ export const time_styles = StyleSheet.create({
     auto_btn: {
         width: 70,
         height: 70,
-        backgroundColor: 'white',
+        backgroundColor: "white",
         borderRadius: 24
     },
 
     text: {
-        color: 'white',
+        color: "white",
         padding: 20,
         fontSize: 24,
     },
@@ -598,22 +603,22 @@ export const time_styles = StyleSheet.create({
 
 export const health_styles = StyleSheet.create({
     hello: {
-        color: '#9A16A3',
+        color: "#9A16A3",
         fontSize: 24,
         marginLeft: 10,
         paddingTop: 29,
     },
     gentle_ask: {
-        color: 'white',
+        color: "white",
         fontSize: 18,
         marginLeft: 10,
         marginBottom: 27,
     },
     info: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignItems: "center",
+        justifyContent: "center",
         borderRadius: 20,
-        backgroundColor: 'rgba(255,255,255,0.2)',
+        backgroundColor: "rgba(255,255,255,0.2)",
         marginBottom: 15,
         marginRight: 10,
         padding: 10,
@@ -621,7 +626,7 @@ export const health_styles = StyleSheet.create({
         height: 72,
     },
     box: {
-      marginBottom: 300,
+        marginBottom: 300,
     },
     arrowback: {
         width: 24,
@@ -646,4 +651,33 @@ export const health_styles = StyleSheet.create({
         height: 20,
         width: 20,
     },
+});
+
+export const Forum_styles = StyleSheet.create({
+    container:{
+        height:70,
+        marginTop: 35,
+        margin: 10,
+        marginRight: 10,
+    },
+    photo:{
+        marginRight:10,
+        marginTop:10,
+        width:60,
+        height:60,
+    },
+    text:{
+        color:"white",
+        marginLeft: 10,
+    },
+    logo: {
+        position: "absolute",
+        right: 10,
+        width: 70,
+        height: 70,
+        marginTop: 50,
+    },
+    header: {
+        marginTop: -25,
+    }
 });

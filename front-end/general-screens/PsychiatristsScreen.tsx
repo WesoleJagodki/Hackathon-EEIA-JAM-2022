@@ -1,7 +1,7 @@
 import React, {View, Image, ScrollView} from "react-native";
 import {Text, NativeBaseProvider, HStack, Center, VStack} from "native-base";
 
-import {LinearGradient} from 'expo-linear-gradient';
+import {LinearGradient} from "expo-linear-gradient";
 import {g_styles, settings_styles, health_styles, main_menu} from "./GeneralStyle";
 
 export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
@@ -9,10 +9,10 @@ export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
         <NativeBaseProvider>
             <ScrollView style={g_styles.container_app}>
                 <LinearGradient
-                    colors={['rgba(22,6,81,100)', 'transparent']}>
+                    colors={["rgba(22,6,81,100)", "transparent"]}>
                     <Center>
                         <HStack>
-                            <View onTouchStart={() => navigation.navigate('MainMenuScreen')}>
+                            <View onTouchStart={() => navigation.navigate("MainMenuScreen")}>
                                 <Image style={health_styles.arrowback} source={require("../image/ArrowBack.png")}  alt={"arrow"}/>
                             </View>
                             <Text style={settings_styles.heading}>Psychiatrist</Text>
@@ -28,11 +28,11 @@ export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
                         </View>
                         <VStack>
                             <Text fontSize={22} style={main_menu.basicText}>Dr. Melly Neil</Text>
-                            <Text marginBottom={2} fontSize={14} color={'#9A16A3'}>Psychiatrist</Text>
+                            <Text marginBottom={2} fontSize={14} color={"#9A16A3"}>Psychiatrist</Text>
                             <HStack>
                                 <Image style={health_styles.star} source={require("../image/star.png")}  alt={"star"}/>
                                 <Text style={main_menu.basicText}>4.8</Text>
-                                <Text color={'#9A16A3'}>      (1021 reviews)</Text>
+                                <Text color={"#9A16A3"}>      (1021 reviews)</Text>
                             </HStack>
                         </VStack>
                     </HStack>
@@ -42,11 +42,11 @@ export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
                         </View>
                         <VStack>
                             <Text fontSize={22} style={main_menu.basicText}>Dr. Jimmy Carner</Text>
-                            <Text marginBottom={2} fontSize={14} color={'#9A16A3'}>Psychiatrist</Text>
+                            <Text marginBottom={2} fontSize={14} color={"#9A16A3"}>Psychiatrist</Text>
                             <HStack>
                                 <Image style={health_styles.star} source={require("../image/star.png")}  alt={"star"}/>
                                 <Text style={main_menu.basicText}>4.7</Text>
-                                <Text color={'#9A16A3'}>      (729 reviews)</Text>
+                                <Text color={"#9A16A3"}>      (729 reviews)</Text>
                             </HStack>
                         </VStack>
                     </HStack>
@@ -56,11 +56,11 @@ export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
                         </View>
                         <VStack>
                             <Text fontSize={22} style={main_menu.basicText}>Dr. Kim Holland</Text>
-                            <Text marginBottom={2} fontSize={14} color={'#9A16A3'}>Psychiatrist</Text>
+                            <Text marginBottom={2} fontSize={14} color={"#9A16A3"}>Psychiatrist</Text>
                             <HStack>
                                 <Image style={health_styles.star} source={require("../image/star.png")}  alt={"star"}/>
                                 <Text style={main_menu.basicText}>4.4</Text>
-                                <Text color={'#9A16A3'}>      (690 reviews)</Text>
+                                <Text color={"#9A16A3"}>      (690 reviews)</Text>
                             </HStack>
                         </VStack>
                     </HStack>
@@ -70,16 +70,16 @@ export const PsychiatristsScreen = function ({navigation}: any): JSX.Element {
                         </View>
                         <VStack>
                             <Text fontSize={22} style={main_menu.basicText}>Dr. Jordan Klaus</Text>
-                            <Text marginBottom={2} fontSize={14} color={'#9A16A3'}>Psychiatrist</Text>
+                            <Text marginBottom={2} fontSize={14} color={"#9A16A3"}>Psychiatrist</Text>
                             <HStack>
                                 <Image style={health_styles.star} source={require("../image/star.png")}  alt={"star"}/>
                                 <Text style={main_menu.basicText}>4.3</Text>
-                                <Text color={'#9A16A3'}>      (483 reviews)</Text>
+                                <Text color={"#9A16A3"}>      (483 reviews)</Text>
                             </HStack>
                         </VStack>
                     </HStack>
                 </LinearGradient>
             </ScrollView>
         </NativeBaseProvider>
-    )
-}
+    );
+};

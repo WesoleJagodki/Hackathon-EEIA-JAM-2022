@@ -10,19 +10,19 @@ interface Props {
 
 export const AlpakaModal = function ({showModal, popupData, setShowModal} : Props): JSX.Element {
     return (
-            <Modal isOpen={showModal}>
-                <Modal.Content maxWidth="400px" style={alpaka_modal.modal}>
-                    <Center>
-                        <Image style={alpaka_modal.image} source={popupData.img || '/static/media/suprised_alpaca.8684b708.png'} alt={popupData.title}></Image>
-                        <Modal.Body>
-                            <Text style={alpaka_modal.header}>{popupData.title}</Text>
-                            <Text style={alpaka_modal.text}>{popupData.description}</Text>
-                        </Modal.Body>
-                        <Button style={alpaka_modal.button} onPress={() => { setShowModal(false); }}>
-                            <Text style={alpaka_modal.button_text}>Complited</Text>
-                        </Button>
-                    </Center>
-                </Modal.Content>
-            </Modal>
-    )
-}
+        <Modal isOpen={showModal}>
+            <Modal.Content maxWidth="400px" style={alpaka_modal.modal}>
+                <Center>
+                    <Image style={alpaka_modal.image} source={popupData.img || "/static/media/suprised_alpaca.8684b708.png"} alt={popupData.title}></Image>
+                    <Modal.Body>
+                        <Text style={alpaka_modal.header}>{popupData.title}</Text>
+                        <Text style={alpaka_modal.text}>{popupData.description}</Text>
+                    </Modal.Body>
+                    <Button style={alpaka_modal.button} onPress={() => { setShowModal(false); }}>
+                        <Text style={alpaka_modal.button_text}>Complited</Text>
+                    </Button>
+                </Center>
+            </Modal.Content>
+        </Modal>
+    );
+};
